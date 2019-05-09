@@ -1,0 +1,54 @@
+{% set title = 'Create Account' %}
+{% set page__title = 'create-account__page' %}
+
+{% extends 'layout/_layout.html' %}
+
+{% block content %}
+
+{% include "partials/_header-clear.html" %}
+
+<main class="page-content__wrap">
+	<section class="form-window">
+		<div class="left">
+			<div class="line-p">
+				<h2 class="h2">Create New</h2>
+			</div>
+			<div class="social-btn-composition">
+				<button class="button-soc"><i class="fab fa-facebook-f"></i>Create</button>
+				<button class="button-soc"><i class="fab fa-google-plus-g"></i>Create</button>
+				<button class="button-soc"><i class="fab fa-twitter"></i>Create</button>
+			</div>
+			<p class="line-p">Or:</p>
+			<form action="#" method="post">
+				<input class="square-input" type="text" placeholder="User name" name="login">
+				<input class="square-input" type="text" placeholder="E-mail" name="email">
+				<input class="square-input" type="text" placeholder="Phone" name="phone">
+				<select name="Areas" class="dropdown-menu">
+	                <option value disabled selected>Area</option>
+	                <option>Food</option>
+	                <option>Clothes</option>
+	                <option>Accessories</option>
+	                <option>Footwear</option>
+            	</select>
+				<input class="square-input" type="text" placeholder="Bank Account" name="bank-account" id="bank-input">
+				<input class="square-input" type="password" placeholder="Password" name="password">
+				<div class="wrap">								
+					<label for="remember" name="remember"><input type="checkbox" id="remember">I Agree All Terms and Rights</label>
+
+				</div>
+			</form>
+			<button class="button square overlay">Create a New Account</button>
+			<p class="line-p">Already have an account?</p>
+			<a href="log-in.html" class="button square">Log In</a>
+			<div class="ftr__log-in copyright">&copy; 2018 Saad Muhamed, All Rights Reserved</div>
+		</div>
+		<div class="right">
+			<div class="text-on-img">
+				<h6 class="h6">The fastest support</h6>
+				<p>It's Nike your favorite sport brand ever! Now we make a new field for our users. Why? Because we think that we want to help you more in your life. So, we choose the healthy food field for you to be the super feature in your next life.</p>
+			</div>
+		</div>
+	</section>
+</main>
+
+{% endblock %}

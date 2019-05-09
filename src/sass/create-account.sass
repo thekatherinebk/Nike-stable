@@ -1,0 +1,20 @@
+#create-account__page
+	.right
+		background-image: url(../img/create-accnt.png)
+
+#bank-input
+	position: relative
+	z-index: 1
+	&::after
+		display: inline-block
+		content: '/optional'
+		position: absolute
+		z-index: 10
+		width: 100px
+		height: 10px
+
+	&:focus
+		&::after
+			display: none
+
+

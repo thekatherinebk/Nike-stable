@@ -1,0 +1,66 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{{ title }}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+<body id="{{page__title}}" >
+	
+	{% block header %}
+		
+	{% endblock %}
+	
+	<main class="page-content">
+		<div class="window-container">
+
+			<aside class="window-menu-sidebar">
+				<nav class="menu-sidebar">
+					<ul>
+						<li class="menu-sidebar__item is-active"><a href="#">Home</a></li>
+						<li class="menu-sidebar__item"><a href="offer-page.html">Offers</a></li>
+						<li class="menu-sidebar__item"><a href="news.html">News</a></li>
+						<li class="menu-sidebar__item"><a href="offers1.html">Challenges</a></li>
+						<li class="menu-sidebar__item"><a href="achievments.html">Achievments</a></li>
+						<li class="menu-sidebar__item"><a href="history.html">History</a></li>
+						<li class="menu-sidebar__item"><a href="#">Features</a></li>
+						<li class="menu-sidebar__item"><a href="profile.html">Settings</a></li>
+					</ul> 
+					<button class="on">on</button>
+				</nav> 	
+			</aside>
+			<section class="window-menu-content">
+				<div class="window-menu-ham">
+					<button class="window-menu-ham__button">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+				
+				<div class="window-content">
+					<div class="block-content">
+					{% block content %}
+					{% endblock %}
+					</div>
+				</div>
+
+
+			</section>
+
+		</div>
+	</main>
+
+	{% block footer %}
+
+	{% endblock %}
+
+
+	<script src="js/vendors.min.js"></script>
+	<script src="js/script.min.js"></script>
+</body>
+</html>

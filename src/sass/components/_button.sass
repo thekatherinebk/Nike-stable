@@ -1,0 +1,188 @@
+button
+	padding: 0
+	background-color: inherit
+	border: none
+	display: inline-block
+	outline: none
+	cursor: pointer
+
+%btn-base
+	position: relative
+	white-space: nowrap
+	cursor: pointer
+	outline: none
+	border: none
+	text-align: center
+	vertical-align: top
+	transition: all .4s ease
+	border-radius: 10em
+	height: 3vmax
+	min-height: 28px
+	background-color: $accent
+	color: #fff
+	font-weight: 700
+	font-size: 1.17em
+	font-family: $default-font
+	transition: all .4s ease
+	&:focus, &:hover
+		text-decoration: none
+		color: #fff
+	&:hover
+		background-color: lighten($accent, 5%)
+		
+	&:active
+		background-color: darken($accent, 5%)
+		outline: none
+	
+.btn-wide
+	@extend	%btn-base
+	width: 100%	
+	
+.btn
+	@extend %btn-base
+	width: 9vmax
+	min-width: 85px
+	
+	//to do: refactor code to delete (.button.grey)
+	
+	&-grey 
+		background-color: $light-grey
+		transition: all .4s ease
+		&:focus, &:hover, &:active
+			text-decoration: none
+			color: #fff
+			.fas
+				color: #fff
+		&:hover
+			background-color: lighten($accent, 5%)
+			
+		&:active
+			background-color: darken($accent, 5%)
+			outline: none
+
+.button
+	display: inline-block
+	border: none
+	color: #fff
+	text-decoration: none
+	background-color: $accent
+	padding: 11px 16.7px
+	font-size: 15px
+	font-weight: 400
+	border-radius: 10em
+	text-align: center
+	position: relative
+	transition: background-color .3s ease
+	cursor: pointer
+	outline: none
+	line-height: 1.5
+	white-space: nowrap
+	vertical-align: top
+	&.transparent
+		background-color: inherit
+		color: #000
+	&.grey
+		background-color: $light-grey
+		color: #000
+
+	&.fa
+		padding: 
+			top: 10px
+			bottom: 10px
+	
+	&:focus, &:hover
+		text-decoration: none
+		color: #fff
+	&:hover
+		background-color: lighten($accent, 5%)
+		
+	&:active
+		background-color: darken($accent, 5%)
+		outline: none
+	
+	&.square 
+		border: 2px solid $accent
+		border-radius: 5px
+		color: $accent
+		background-color: inherit
+		width: 100%
+		height: $square-height
+		line-height: $square-height	
+		padding: 0 28px
+		font: bold 25px $default-font
+		transition: all .4s ease
+		&:hover
+			color: #fff
+			background-color: lighten($accent, 5%)
+		&:active
+			color: #fff
+			background-color: darken($accent, 5%)
+			outline: none
+		&.overlay
+			color: #fff
+			background-color: $accent
+			&:hover
+				background-color: $bgc
+				color: $accent
+			&:active
+				color: $accent
+				background-color: $bgc
+				outline: none
+
+	&-soc
+		display: inline-block
+		height: 69px
+		width: 26.43%
+		border-radius: 10px
+		color: #fff
+		line-height: 69px
+		font-size: 24px
+		cursor: pointer
+		font-family: $default-font
+		&:nth-child(1)
+			background-color: #1876D2
+		&:nth-child(2)
+			background-color: #EF4B39
+		&:nth-child(3)
+			background-color: #00A4E4
+
+		.fab
+			margin-right: 15px
+
+		&:hover
+			background-color: lighten($accent, 5%)
+		
+		&:active
+			background-color: darken($accent, 5%)
+			outline: none
+
+	
+
+
+.social-btn-composition
+	display: flex
+	justify-content: space-between
+
+
+.rating-hand-btn
+	border-radius: 10em
+	.fas
+		color: orange 
+		font-size: 1.765rem
+		padding: 1.24rem 2.058rem
+		line-height: 1
+		transition: all .2s ease
+
+
+
+
+@media only screen and (max-width : 1560px)
+	/**/
+
+@media only screen and (max-width : 1200px)
+	/**/
+@media only screen and (max-width : 992px)
+	/**/
+@media only screen and (max-width : 576px) 
+	/**/
+

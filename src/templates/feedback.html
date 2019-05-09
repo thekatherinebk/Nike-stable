@@ -1,0 +1,37 @@
+{% set title = 'Feedback' %}
+{% set page__title = feedback__page' %}
+
+{% extends 'layout/_account-layout.html' %}
+
+{% block header %}
+
+	{% include "partials/_header_auth.html" %}
+
+{% endblock %}
+
+{% block content %}
+ <section class="feedback-s">
+
+   <div class="feedback-s__title page-title">
+     Feedback
+   </div>
+
+   <div class="feedback-wrap">
+
+     {% include "partials/_feedback-item.html" %}
+     {% include "partials/_feedback-item.html" %}
+     {% include "partials/_feedback-item.html" %}
+
+   </div>
+ </section>
+
+
+{% endblock %}
+
+
+
+{% block footer %}
+
+	{% include 'partials/_footer.html' %}
+
+{% endblock %}

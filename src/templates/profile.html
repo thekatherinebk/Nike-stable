@@ -1,0 +1,77 @@
+{% set title = 'Profile' %}
+{% set page__title = profile__page' %}
+
+{% extends 'layout/_account-layout.html' %}
+
+
+{% block header %}
+
+	{% include "partials/_header_auth.html" %}
+
+{% endblock %}
+
+
+
+{% block content %}
+
+	<section class="profile-s">
+
+	<div class="profile-wrap">
+		<div class="profile-part ">
+			<div class="grey-square title-h3">
+				Spent: 1200$ 
+			</div>
+			<div class="prof-white">Member 2 years ago</div>
+		</div>
+		<div class="profile-part grey-square title-h3">270р</div>
+	
+		<div class="profile-part">
+			<img class="img-responsive profile-img"	src="../img/items/saadmuhamed3.png" alt="">
+			<div class="user-name page-title">Saad Muhamed</div>
+		</div>
+		<div class="profile-part">
+			<div class="grey-square title-h3">
+				Customer: Prime 
+				<i class="fas fa-star"></i> 
+			</div>
+			<div class="profile-status prof-white">
+				<div class="circle"></div>
+				Log out
+			</div>
+		</div>
+	</div>
+
+	<div class="feedback-wrap">
+		{% include "partials/_feedback-item.html" %}
+		{% include "partials/_feedback-item.html" %}	
+	</div>
+		
+
+	<div class="ach-items-wrap">
+		{% include "partials/_achievements-line.html" %}
+		{% include "partials/_achievements-line.html" %}
+		{% include "partials/_achievements-line.html" %}
+		{% include "partials/_achievements-line.html" %}
+		{% include "partials/_achievements-line.html" %}
+		{% include "partials/_achievements-line.html" %}
+		{% include "partials/_achievements-line.html" %}
+		{% include "partials/_achievements-line.html" %}
+		{% include "partials/_achievements-line.html" %}
+		{% include "partials/_achievements-line.html" %}
+		
+	</div>
+
+	</section>
+	
+	
+
+
+{% endblock %}
+
+
+
+{% block footer %}
+
+	{% include 'partials/_footer.html' %}
+
+{% endblock %}

@@ -1,0 +1,154 @@
+.package-view-section
+	width: 100%
+	padding: 20px 82px 20px 20px
+
+
+.package-view-wrap
+	max-width: 1058px 
+	margin: 0 auto
+	.owl-carousel
+		.owl-nav
+			button
+				&.owl-prev, &.owl-next
+					background-color: #fff
+					width: 47px
+					height: 47px
+					color: #000
+					line-height: 47
+					border-radius: 10em
+					position: absolute
+					top: 247px
+					z-index: 10
+					transition: all .3s ease
+					&:active, &:hover
+						background-color: $accent
+						color: #fff
+
+				&.owl-prev
+					left: -40px
+					display: inline-block
+				&.owl-next
+					right: -100px
+		.owl-dots
+			text-align: center
+			height: 10px
+
+
+		.owl-dot
+			width: 9px
+			height: 9px
+			background-color: $accent
+			margin: 0 5px
+			border-radius: 10em
+			transition: all .4s ease
+			&.active
+				width: 38px
+
+
+
+
+.package-view
+	width: 100%
+	position: relative
+	padding: 0 0 4.2vmax 
+	background-size: contain
+	background-position: top center
+	background-repeat: no-repeat
+
+	&__title
+		padding-top: 11%
+		text-align: right
+		right: 0
+		&-unit
+			font-size: 1.563vmax
+			font-weight: 700
+			color: #000
+			margin: 0
+
+	&__h 
+		display: inline-block	
+		font-size: 5.2vmax
+		border-bottom: 1px solid $grey-text
+		line-height: 1
+		padding-bottom: 1.5rem
+	&__info
+		width: 100%
+		display: flex
+		justify-content: space-around
+		align-items: center
+		margin-top: 26.5%
+
+
+	&__receipt
+		//width: 33%
+
+	&__cta
+		width: 182px
+
+	
+	&__btn
+		display: block
+		margin: 17px auto 0
+
+
+
+
+@media only screen and (max-width : 1560px)
+	/**/
+	.package-view
+		&-wrap
+			max-width: 907.2px
+
+@media only screen and (max-width : 1200px)
+	/**/
+	.package-view
+		&-section
+			padding-right: 40px
+		&-wrap
+			.owl-carousel
+				.owl-nav
+					button
+						&.owl-prev, &.owl-next
+							top: 180px
+
+						&.owl-next
+							right: -58px
+
+
+	
+
+@media only screen and (max-width : 992px)
+	/**/
+
+
+@media only screen and (max-width : 768px)
+	/**/
+	.package-view
+		padding-top: 0
+		&-section
+			padding-right: 20px
+		&-wrap
+			.owl-carousel
+				.owl-nav
+					button
+						&.owl-prev, &.owl-next
+							top: 120px
+						&.owl-prev
+							left: -58px
+							
+
+
+		&__receipt
+			padding: 0 10%
+
+
+
+@media only screen and (max-width : 576px)
+	/**/
+	.package-view
+		&__info
+				flex-wrap: wrap
+				flex-direction: column
+
+@media only screen and (max-width : 320px)
+	/**/

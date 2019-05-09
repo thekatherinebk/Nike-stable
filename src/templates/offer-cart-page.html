@@ -1,0 +1,87 @@
+{% set title = 'Offer-cart' %}
+{% set page__title = 'offer-cart__page' %}
+
+{% extends 'layout/_account-layout.html' %}
+
+
+{% block header %}
+
+{% include "partials/_header_auth.html" %}
+
+{% endblock %}
+
+
+
+{% block content %}
+
+<section class="offer-cart">
+	<div class="cart-gallery">
+		<div class="cart-gallery-valuation">
+			<button class="cart-gallery-valuation__btn rating-hand-btn"><i class="fas fa-thumbs-up"></i></button>
+			<button class="cart-gallery-valuation__btn rating-hand-btn"><i class="fas fa-thumbs-down"></i></button>
+		</div>
+		<div class="cart-gallery-carousel owl-carousel" data-slider-id="1">
+			<div class="cart-gallery-carousel__item" style="background-image: url(../img/items/good2.png)">
+			</div> 
+			<div class="cart-gallery-carousel__item" style="background-image: url(../img/home/2.png)">
+			</div>
+			<div class="cart-gallery-carousel__item" style="background-image: url(../img/home/food.png)">
+			</div>
+		</div>
+		<div class="owl-thumbs" data-slider-id="1">
+		    <button class="owl-thumb-item" style="background-image: url(../img/items/good2.png)"></button>
+		    <button class="owl-thumb-item" style="background-image: url(../img/home/2.png)"></button>
+		    <button class="owl-thumb-item" style="background-image: url(../img/home/food.png)"></button>
+		</div>
+	</div>
+	<div class="cart-info">
+		<div class="cart-info__title">
+			Nike Zoom Running Package
+		</div>
+		
+			<!-- package-view__receipt -->
+			<div class="ingredients-box cart-info__composition">
+				<div class=" ingredients-box__title">
+					<div class="ingredients-box__header ">Ingredients</div> 
+					<div class="rating-stars">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="far fa-star"></i>
+					</div>
+				</div>
+				<p class="ingredients-box__content">
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+				</p>
+			</div>
+
+			<div class="cart-info__cta">
+				<div class="cart-info__price">20$</div>	
+				<i class=" cart-info__basket fas fa-cart-plus"></i>
+				<button class="cart-info__btn btn">Eat Now</button>	
+				
+				<div class="cart-info-colors">
+					<button class="cart-info-colors__circle"></button>
+					<button class="cart-info-colors__circle  is-active "></button>
+					<button class="cart-info-colors__circle "></button>
+					<button class="cart-info-colors__circle "></button>
+					<button class="cart-info-colors__circle "></button>
+				</div>
+			</div>	
+		
+	</div>
+</section>
+
+
+
+
+{% endblock %}
+
+
+
+{% block footer %}
+
+{% include 'partials/_footer.html' %}
+
+{% endblock %}

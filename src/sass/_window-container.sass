@@ -1,0 +1,197 @@
+.page-content
+	margin: 0 auto
+	position: relative
+	width: 100%
+	padding: 120px 7.2vmax 2.35rem
+	max-width: 1920px
+	height: auto
+	background-color: rgba($light-grey, .5)
+
+
+@mixin transitionAll()
+	transition: all .4s ease-in-out
+
+.window
+	&-container
+		width: 100%
+		position: relative
+		background-color: #fff
+		height: auto
+		//overflow: hidden
+
+
+	&-menu
+		width: 0
+		&-sidebar
+			position: absolute
+			top: 0
+			left: 0
+			padding: 23px 28px 
+			background-color: $light-grey
+			height: 100%
+			transition: width .5s ease .2s
+			&.is-opened
+				transition: width .5s ease .2s
+				width: 276px
+				z-index: 9
+
+
+
+		&-content
+			max-width: 100%
+			width: 100%
+			height: auto
+			background-color: #fff
+			padding-left: 77px
+			@include transitionAll()
+			&.is-small-width
+				padding-left: 276px
+
+		&-ham
+			display: block
+			position: absolute
+			left: 0
+			top: 0
+			opacity: 1
+			background-color: $light-grey
+			height: 100%
+			width: 77px
+			z-index: 5
+			@include transitionAll()
+
+			&__button
+				display: block
+				width: 50px
+				height: 34px
+				position: relative
+				margin: 20px auto
+				span
+					display: block
+					background-color: #000
+					width: 30px
+					margin: 5px 10px
+					border-radius: 6px
+					height: 4px
+					position: absolute
+					left: 0
+					
+					&:nth-child(1)
+						top: 0
+					&:nth-child(2)
+						top: 8px
+					&:nth-child(3)
+						top: 16px
+		
+	&-content
+		width: 100%
+		padding: 2.94rem 5.42vmax 3.12rem
+
+// menu styles
+
+.menu-sidebar
+	&__item
+		font-size: 1.177em
+		color: $grey-text
+		border-bottom: 1px solid $grey-text
+		padding: 9px 0 9px 19px
+		transition: all .3s ease
+		a
+			display: inline-block
+			width: 100%
+			&:active
+				color: $accent	
+				font-weight: 700
+				border-bottom-color: $accent
+
+		&:hover, &:focus, &:active
+			color: $accent	
+			font-weight: 700
+			border-bottom-color: $accent
+		
+
+		&.is-active
+			color: $accent
+			font-weight: 700
+			border-bottom-color: $accent
+			border-bottom-size: 2px
+			position: relative
+
+			// &::after
+			// 	text-align: center
+			// 	content: '\f060'
+			// 	font-family: "Font Awesome 5 Free"
+			// 	position: absolute
+			// 	top: 0
+			// 	right: -51.5px
+			// 	height: 47px
+			// 	width: 47px
+			// 	line-height: 47px
+			// 	background-color: $light-grey
+			// 	border-radius: 10em
+			// 	z-index: 1
+			// 	cursor: pointer
+
+
+@media only screen and (max-width : 1560px)
+	/**/
+	.page-content
+		padding
+			top: 110px 
+
+	.window
+		&-menu
+			&-ham
+				width: 55px
+			&-sidebar
+				padding: 15px 
+				&.is-opened
+					width: 200px
+			&-content
+				padding-left: 55px
+				&.is-small-width
+					padding-left: 200px
+
+
+
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+@media only screen and (max-width : 992px)
+	/**/
+	.page-content
+		padding: 80px 0px 0
+
+
+
+@media only screen and (max-width : 768px)
+	/**/
+	.window
+		&-menu
+			&-sidebar
+				&.is-opened
+					width: 170px
+			&-content
+				&.is-small-width
+					padding-left: 170px
+
+@media only screen and (max-width : 576px)
+	/**/
+	.window
+		
+		&-menu
+			&-sidebar
+				padding: 40px
+				text-align: center
+				&.is-opened
+					width: 100%
+					position: fixed
+
+					height: 100%
+
+			&-content.is-small-width
+				padding-left: 55px
+
+@media only screen and (max-width : 320px)
+	/**/
+

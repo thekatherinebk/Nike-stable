@@ -1,0 +1,61 @@
+.basket
+
+	&-cart
+		display: flex
+
+	&-goods
+		flex-grow: 1
+
+	&-info
+		max-width: 392px
+		flex-grow: 2
+		margin-left: 3.59rem
+		&__price
+			display: flex
+			justify-content: space-between
+			align-items: center
+			font-weight: 700
+			margin-bottom: 2rem
+			&:nth-child(2)
+ 				.basket-info__total
+ 					font-size: 3.125vmax
+				
+		&__btn
+			&::after
+				content: ''
+				width: 1px
+				height: 100%
+				background-color: $grey-text
+				position: relative
+				top: 0
+				right: 0
+
+		&__total
+			&:after
+				content: ''
+				width: 1px
+				height: 100%
+				background-color: $grey-text
+				position: relative
+				top: 0
+				right: 0
+			
+	&-title
+		margin-bottom: 7.35rem
+		
+		.fas
+			font-size: 2.6vmax
+		
+	
+
+	&-wrap
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-wrap: wrap
+				//margin-top: 6.67vmax
+
+#basket-cart__page
+	.block-content
+		max-width: initial
+

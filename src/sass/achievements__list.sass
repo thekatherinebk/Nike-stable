@@ -1,0 +1,128 @@
+.history 
+	.ach-title__btn
+		&::before
+			display: none
+
+.ach
+	&-title
+		line-height: 1
+		display: flex
+		justify-content: space-between
+		margin-bottom: 3.125vmax //4.11em
+		align-items: center
+		&__h
+
+
+		&__total
+			vertical-align: middle
+			display: flex
+			align-items: center
+		&__amnt
+			margin:
+				right: 37px
+				left: 5px
+		&__btn
+			height: 3vmax
+			font-weight: 700 
+			width: 9vmax
+			min-width: 85px
+			margin-left: 37px
+			min-height: 28px
+			&::before
+				content: ""
+				width: 1px
+				height: 55.8%
+				background-color: #000
+				position: absolute
+				left: -37px
+				top: 22.1%
+			&.button
+				font-weight: 700
+				font-family: inherit
+				padding: 0	
+				font-size: 1.17em
+	
+	&-items-wrap
+
+
+	&-line
+		display: flex
+		justify-content: space-between
+		align-items: center
+		width: 100%
+		padding: 1em 0
+		border-bottom: 2px solid $light-grey
+		&:last-child 
+			border-bottom: none
+		&__name
+			color: #000
+			font-weight: 700
+			font-size: 1.47em
+
+		&__btn
+			margin: 0 18px
+			&:nth-child(2)
+				margin-left: auto
+
+		&__amnt
+			font-size: 1.47em
+			font-weight: 700
+			word-spacing: 3px
+			color: #000
+			margin: 0 18px
+		&__time
+			margin-left: 18px
+			position: relative
+			&::before
+				content: ""
+				width: 1px
+				height: 100%
+				top: auto
+				background-color: #000
+				position: absolute
+				left: -18px
+
+
+@media only screen and (max-width : 1560px)
+	/**/
+
+@media only screen and (max-width : 1200px)
+	/**/
+@media only screen and (max-width : 768px)
+	/**/
+	.ach-title
+		&__amnt
+			margin-right: 10px
+		&__btn
+			margin-left: 10px
+			&::before
+				left: -10px
+
+
+	.ach-line
+		font-size: 9px
+		&__btn
+			margin: 0 0 0 16px
+
+
+@media only screen and (max-width : 576px) 
+	/**/
+	.ach-line
+		&__amnt
+			margin:
+				right: 0
+				left: 16px
+		&__time
+			display: none
+
+
+@media only screen and (max-width : 480px) 
+	.ach-title
+		flex-wrap: wrap
+
+		&__h, &__total
+			width: 100%
+			text-align: left
+		&__total
+			margin: 8px 0
+			justify-content: flex-end

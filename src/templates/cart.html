@@ -1,0 +1,68 @@
+{% set title = 'Basket Cart' %}
+{% set page__title = 'basket-cart__page' %}
+
+{% extends 'layout/_account-layout.html' %}
+
+
+{% block header %}
+
+{% include "partials/_header_auth.html" %}
+
+{% endblock %}
+
+
+
+{% block content %}
+
+
+		<section class="basket-cart">
+			<div class="basket-goods">
+				<h2 class="basket-title page-title">Cart <i class="fas fa-shopping-cart"></i></h2>
+				<div class="basket-wrap">
+					{% include "partials/_shopping-cart.html" %}
+					{% include "partials/_shopping-cart.html" %}
+					{% include "partials/_shopping-cart.html" %}
+				</div>	
+			</div>
+			<div class="basket-info">
+				<div class="basket-info-btns">
+					<div class="basket-info__price">
+						<button class="basket-info__btn  btn">Eat Now</button>
+						<div class="basket-info__total">Total: 110$</div>
+					</div>
+					<div class="basket-info__price">
+						<button class="basket-info__btn btn">Eat By Points</button>
+						<div class="basket-info__total">123 p</div>
+					</div>
+				</div>
+					<form action="#" method="post">
+						<input class="square-input" type="text" placeholder="User name" name="login">
+						<input class="square-input" type="text" placeholder="E-mail" name="email">
+						<select name="Country" class="dropdown-menu">
+			                <option value disabled selected>Country</option>
+			                <option>Australia</option>
+			                <option>Ukraine</option>
+			                <option>Russia</option>
+			                <option>Britain</option>
+		            	</select>
+						<input class="square-input" type="text" placeholder="Address 1" name="address" id="adress-input">
+						<textarea class="square-input" name="Special request" id="spec-request__field" placeholder="Special request" ></textarea>
+						<div class="btns-wrap">
+							<button class="square-btn btn">Buy now</button>
+							<button class="square-btn btn">Delete cart</button>
+						</div>
+					</form>
+				
+			</div>
+		</section>
+
+
+{% endblock %}
+
+
+
+{% block footer %}
+
+{% include 'partials/_footer.html' %}
+
+{% endblock %}

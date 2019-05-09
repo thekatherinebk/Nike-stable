@@ -1,0 +1,49 @@
+{% set title = 'Achievments' %}
+{% set page__title = achievements__page' %}
+
+{% extends 'layout/_account-layout.html' %}
+
+
+{% block header %}
+
+	{% include "partials/_header_auth.html" %}
+
+{% endblock %}
+
+
+
+{% block content %}
+	<section class="achievements">
+		
+		<div class="ach-title">
+			<h2 class="ach-title__h page-title">Achievments</h2>
+			<div class="ach-title__total">
+				<span>Total:</span>
+				<div class="ach-title__amnt page-title">123p</div>
+				<button class="ach-title__btn button">Collect</button>
+			</div>
+		</div>
+		<div class="ach-items-wrap">
+			{% include 'partials/_achievements-line.html' %}
+			{% include 'partials/_achievements-line.html' %}
+			{% include 'partials/_achievements-line.html' %}
+			{% include 'partials/_achievements-line.html' %}
+			{% include 'partials/_achievements-line.html' %}
+			{% include 'partials/_achievements-line.html' %}
+			{% include 'partials/_achievements-line.html' %}
+			{% include 'partials/_achievements-line.html' %}
+			{% include 'partials/_achievements-line.html' %}
+			{% include 'partials/_achievements-line.html' %}
+			
+		</div>
+	</section>
+
+{% endblock %}
+
+
+
+{% block footer %}
+
+	{% include 'partials/_footer.html' %}
+
+{% endblock %}

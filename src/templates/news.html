@@ -1,0 +1,27 @@
+{% set title = 'News' %}
+{% set page__title = news__page' %}
+
+{% extends 'layout/_account-layout.html' %}
+
+
+{% block header %}
+
+	{% include "partials/_header_auth.html" %}
+
+{% endblock %}
+
+
+
+{% block content %}
+	
+	{% include "partials/_package-view.html" %}
+
+{% endblock %}
+
+
+
+{% block footer %}
+
+	{% include 'partials/_footer.html' %}<!--  -->
+
+{% endblock %}
