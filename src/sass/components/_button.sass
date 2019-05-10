@@ -6,6 +6,34 @@ button
 	outline: none
 	cursor: pointer
 
+//for header btns_________________________
+
+%btn
+	position: relative
+	white-space: nowrap
+	cursor: pointer
+	outline: none
+	border: none
+	text-align: center
+	vertical-align: top
+	transition: all .4s ease
+	border-radius: 10em
+	height: 2.53rem
+	font-size: .88rem
+	font-family: $default-font
+	transition: all .4s ease
+
+.btn-pad
+	@extend %btn
+	display: inline-block
+	padding: 0 1rem
+	line-height: 2.53rem
+	.fas
+		font-size: 1.18rem
+		line-height: inherit
+
+//_____________
+
 %btn-base
 	position: relative
 	white-space: nowrap
@@ -28,15 +56,18 @@ button
 		text-decoration: none
 		color: #fff
 	&:hover
-		background-color: lighten($accent, 5%)
+		background-color: lighten($accent, 20%)
 		
 	&:active
-		background-color: darken($accent, 5%)
+		background-color: darken($accent, 20%)
 		outline: none
 	
 .btn-wide
 	@extend	%btn-base
 	width: 100%	
+
+
+
 	
 .btn
 	@extend %btn-base
@@ -44,7 +75,32 @@ button
 	min-width: 85px
 	
 	//to do: refactor code to delete (.button.grey)
-	
+	&-accent
+		color: #fff
+		text-decoration: none
+		background-color: $accent
+		&:focus, &:hover
+			text-decoration: none
+			color: #fff
+		&:hover
+			background-color: lighten($accent, 5%)
+			
+		&:active
+			background-color: darken($accent, 5%)
+			outline: none
+	&-transp
+		color: #000
+		background-color: none
+		&:focus, &:hover
+			text-decoration: none
+			color: #fff
+		&:hover
+			background-color: lighten($accent, 5%)
+			
+		&:active
+			background-color: darken($accent, 5%)
+			outline: none
+
 	&-grey 
 		background-color: $light-grey
 		transition: all .4s ease
@@ -54,10 +110,10 @@ button
 			.fas
 				color: #fff
 		&:hover
-			background-color: lighten($accent, 5%)
+			background-color: lighten($accent, 10%)
 			
 		&:active
-			background-color: darken($accent, 5%)
+			background-color: darken($accent, 10%)
 			outline: none
 
 .button

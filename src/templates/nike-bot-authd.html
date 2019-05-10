@@ -1,0 +1,34 @@
+{% set title = 'Nike Bot' %}
+{% set page__title = 'nike-bot__page' %}
+
+{% extends 'layout/_layout.html' %}
+
+{% block content %}
+
+{% include "partials/_header-authd.html" %}
+
+<main class="page-content__wrap">
+	<section class="nike-bot__section">
+		<div class="emoji">
+			<img class="img-responsive" src="../img/robot-face.svg" alt="nike-robot">
+			<img class="img-responsive" src="../img/thinking-face.svg" alt="thinking-face">
+		</div>
+
+		<form action="#" id="search__form">
+			<input class="square-input" id="search__field" type="search" placeholder="Ask Nike Bot" name="q">
+			<button class="ref__btn">?</button>
+			<button class="button"><i class="fas fa-arrow-right"></i></button>
+		</form>
+		<div class="line-p"><div class="h2">Trend Questions</div></div>
+		<form action="#" id="ask__form">
+			<input class="square-input" type="text" placeholder="Ask Nike Bot...">
+			<input class="square-input" type="text" placeholder="Ask Nike Bot...">
+			<input class="square-input" type="text" placeholder="Ask Nike Bot...">
+			<button class="button square">Ask <i class="fas fa-arrow-right"></i></button>
+		</form>
+	</section>
+</main>
+
+{% include 'partials/_footer.html' %}
+
+{% endblock %}

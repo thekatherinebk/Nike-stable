@@ -1,0 +1,209 @@
+
+.padding-1
+	padding:
+		left: 7.14vmax
+		right: 7.14vmax
+
+.padding-2
+	padding:
+		left: 14.28vmax
+		right: 14.28vmax
+
+.header
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 25
+	height: 4.588rem
+	&-main
+		padding-top: 1.4rem
+		background-color: $bgc
+
+	&-empty, &-authd
+		background-color: #fff
+		display: flex
+		align-items: center
+
+	&-container
+		display: flex
+		justify-content: space-between
+		align-content: flex-end
+		align-items: center
+		width: 100%
+		max-width: 100%
+
+	&-item
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+		
+		&__content
+			display: flex
+			align-items: center
+			&:first-child
+				margin: 0 1rem 0 0
+			&:last-child
+				margin: 0 0 0 1rem
+
+
+	&-auth
+
+		&__btn
+			margin: 0 0 0 1rem
+
+
+
+.logo
+	margin: 0 -20px
+
+	
+.just-it-btn
+	font-size: get-rem(20px)
+	margin: 0 0 0 1rem	
+	font-weight: 700
+	.fas
+		color: #000
+	&:last-child
+		padding: 0 2rem
+
+.main-menu
+	display: flex
+	position: relative
+	li
+		position: relative
+		padding: 1rem 1.76rem 
+		margin: 0	
+		transition: all .3s ease
+		&::before
+			content: ''
+			position: absolute
+			bottom: 4px
+			height: 6px
+			width: 1.7rem
+			background-color: $accent
+			opacity: 0
+			left: 0
+			right: 0
+			margin: 0 auto
+
+		&::after
+			position: absolute
+			z-index: -1
+			top: -1.4rem
+			content: ""
+			left: 0
+			right: 0
+			bottom: 7px
+			border-radius: 0 0 1.2em 1.2em
+			background-color: $light-grey
+			opacity: 0
+			transition: all .3s ease
+
+		a
+			transition: all .3s ease
+		&:hover
+			transition: all .3s ease
+			a
+				color: #000
+				font-weight: 700
+			&::before, &::after
+				opacity: 1
+
+.user
+	&-nav
+		display: flex
+		justify-content: space-around
+		align-items: center
+		&__item
+			position: relative
+			margin: 0 get-rem(16px)
+			&:first-child, &:last-child
+				&::before
+					margin: auto
+					position: absolute
+					top: 0
+					bottom: 0
+					left: -1rem
+					content: ' '
+					width: 1px
+					height: 28px
+					background-color: $grey-text
+			.fas, .far	
+				font-size: get-rem(28px)
+				margin-right: get-rem(13px)
+		&__link
+			display: flex
+			align-items: center
+			font-size: 1rem
+			transition: all .3s ease
+			&:hover
+				color: $accent
+			&:active
+				color: darken($accent, 10%)
+
+
+		&-profile
+			position: relative
+			display: flex
+			justify-content: space-between
+			align-items: center
+
+			&__img
+				width: get-rem(43px)
+			&__name
+				font-weight: 700
+				margin: 0 get-rem(14px)
+				white-space: nowrap
+				
+
+.search-form
+	&::before
+		content: "\f002"
+		font-size: 1.1rem
+		font-family: "Font Awesome 5 Free"
+		position: relative
+		top: 0
+		bottom: 0
+		margin: auto
+
+
+
+
+@media only screen and (max-width : 1600px)
+
+	.padding
+		&-1
+			padding: 
+				left: 4.2vmax
+				right: 4.2vmax
+
+		&-2
+			padding:
+				left: 8.4vmax
+				right: 8.4vmax
+			
+
+@media only screen and (max-width : 1200px)
+
+
+	.padding-2
+		padding: 
+			left: 4.2vmax
+			right: 4.2vmax
+
+
+@media only screen and (max-width : 568px)
+	
+	.padding
+		&-1, &-2
+			padding: 
+				left: 3.5vw
+				right: 3.5vw
+
+	/**/
+
+
+
+//1024px - hide menu
