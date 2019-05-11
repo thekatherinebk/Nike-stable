@@ -1,52 +1,30 @@
-{% set title = 'Accounts-Home' %}
-{% set page__title = 'accounts-home__page' %}
+{% set title = 'Accounts Home' %}
+{% set page__title = 'accounts__page' %}
 
-{% extends 'layout/_layout.html' %}
+{% extends 'layout/_account-layout.html' %}
+
+
+{% block header %}
+
+	{% include "partials/_header-auth.html" %}
+
+{% endblock %}
+
+
 
 {% block content %}
 
-{% include "partials/_header-auth.html" %}
-
-<main class="page-content__wrap">
 	<section class="accounts-home">
-		<div class="good-cart-wrap">
-			{% include "partials/_good-cart.html" %}
-			<div class="good-cart"> 
-				<img class=" good-cart__img img-responsive" src="../img/items/good2.png" alt="Nike Air Max">
-				<div class="good-cart__bgc"><p class="good-cart__title">Nike Zoom Running Package</p>	
-					<div class="good-cart__line">
-						<button class="good-cart__basket"><i class="fas fa-cart-plus"></i></button>
-						<div class="good-cart__rating">
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="far fa-star"></i>
-						</div>
-					</div>
-					<button class="good-cart__button button">Eat Now!</button>
-				</div>
-			</div>
-			{% include "partials/_good-cart.html" %}
-			<div class="good-cart"> 
-				<img class=" good-cart__img img-responsive" src="../img/items/good2.png" alt="Nike Air Max">
-				<div class="good-cart__bgc"><p class="good-cart__title">Nike Zoom Running Package</p>	
-					<div class="good-cart__line">
-						<button class="good-cart__basket"><i class="fas fa-cart-plus"></i></button>
-						<div class="good-cart__rating">
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="far fa-star"></i>
-						</div>
-					</div>
-					<button class="good-cart__button button">Eat Now!</button>
-				</div>
-			</div>
-		</div>
+
+
+		
+		{% include "partials/_good-cart-section.html" %}
+
+
 		<div class="feedback-cart-wrap">
+
 			{% include "partials/_feedback-cart.html" %}
+
 			<div class="feedback-cart">
 				<div class="feedback-cart__content"><!-- 
 				 --><div class="feedback-cart__user-img"><img class="img-responsive" src="../img/items/user2.png" alt="user"></div>
@@ -56,14 +34,12 @@
 						<div class="feedback-cart__text">
 							It's Nike your favorite sport brand ever! Now we make a new field for our users. Why? Because we think that we want to help you more in your life. So, we choose the healthy food field for you to be the super feature in your next life.
 						</div>
-						<button class="feedback-cart__button button grey"><i class="fas fa-thumbs-up"></i></button>
-						<button class="feedback-cart__button button grey"><i class="fas fa-thumbs-down"></i></button>
+						<button class="feedback-cart__btn rating-hand-btn btn-grey"><i class="fas fa-thumbs-up"></i></button>
+						<button class="feedback-cart__btn rating-hand-btn btn-grey"><i class="fas fa-thumbs-down"></i></button>
 					</div>
 				</div>
-				<div class="feedback-cart__img img-responsive">
-					<img src="../img/items/meal1.png" alt="">
-				</div>
-			</div>	
+				<div class="feedback-cart__img" style="background-image: url(../img/items/meal2.png);"></div>
+			</div>			
 			<div class="feedback-cart">
 				<div class="feedback-cart__content"><!-- 
 				 --><div class="feedback-cart__user-img"><img class="img-responsive" src="../img/items/user3.png" alt="user"></div>
@@ -73,23 +49,25 @@
 						<div class="feedback-cart__text">
 							It's Nike your favorite sport brand ever! Now we make a new field for our users. Why? Because we think that we want to help you more in your life. So, we choose the healthy food field for you to be the super feature in your next life.
 						</div>
-						<button class="feedback-cart__button button grey"><i class="fas fa-thumbs-up"></i></button>
-						<button class="feedback-cart__button button grey"><i class="fas fa-thumbs-down"></i></button>
+						<button class="feedback-cart__btn rating-hand-btn btn-grey"><i class="fas fa-thumbs-up"></i></button>
+						<button class="feedback-cart__btn rating-hand-btn btn-grey"><i class="fas fa-thumbs-down"></i></button>
 					</div>
 				</div>
-				<div class="feedback-cart__img img-responsive">
-					<img src="../img/items/meal1.png" alt="">
-				</div>
-			</div>	
-		</div>		
+				<div class="feedback-cart__img" style="background-image: url(../img/items/meal3.png);"></div>
+			</div>		
+
+		</div>	
+		<div class="see-more-button button">See more   <i class="fas fa-arrow-down"></i></div>
+		
 	</section>
-</main>
-
-{% include 'partials/_footer.html' %}
-
 
 
 {% endblock %}
 
 
-<!-- good-cart - block -->
+
+{% block footer %}
+
+	{% include 'partials/_footer.html' %}
+
+{% endblock %}

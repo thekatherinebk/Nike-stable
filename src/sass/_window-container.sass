@@ -2,10 +2,12 @@
 	margin: 0 auto
 	position: relative
 	width: 100%
-	padding: 120px 7.2vmax 2.35rem
+	padding: get-rem(120px) 7.2vmax 2.35rem
 	max-width: 1920px
 	height: auto
 	background-color: rgba($light-grey, .5)
+
+
 
 
 @mixin transitionAll()
@@ -21,18 +23,22 @@
 
 
 	&-menu
-		width: 0
+		
+		
 		&-sidebar
+			display: none
+			width: 276px
 			position: absolute
 			top: 0
 			left: 0
 			padding: 23px 28px 
 			background-color: $light-grey
 			height: 100%
-			transition: width .5s ease .2s
+			transform: translateX(-276px)
 			&.is-opened
-				transition: width .5s ease .2s
-				width: 276px
+				display: block
+				transform: translateX(0)
+				transition: all .4s ease 
 				z-index: 9
 
 
@@ -89,6 +95,7 @@
 // menu styles
 
 .menu-sidebar
+	position: relative
 	&__item
 		font-size: 1.177em
 		color: $grey-text
@@ -116,33 +123,45 @@
 			border-bottom-size: 2px
 			position: relative
 
-			// &::after
-			// 	text-align: center
-			// 	content: '\f060'
-			// 	font-family: "Font Awesome 5 Free"
-			// 	position: absolute
-			// 	top: 0
-			// 	right: -51.5px
-			// 	height: 47px
-			// 	width: 47px
-			// 	line-height: 47px
-			// 	background-color: $light-grey
-			// 	border-radius: 10em
-			// 	z-index: 1
-			// 	cursor: pointer
+.on-arrow
+	display: none
+	position: absolute
+	top: 0
+	right: -120px
+	width: get-rem(52px)
+	height: get-rem(52px)
+	line-height: get-rem(52px)
+	background-color: $light-grey
+	border-radius: 10em
+	&.is-active
+		display: inline-block
+		right: -38px
+
+	&:hover
+
+		background-color: $accent
+		.fas
+			color: #fff
+
+#accounts__page
+	.on-arrow
+		top: 0
+
+#offer__page
+	.on-arrow
+		top: 43px	
+
 
 
 @media only screen and (max-width : 1560px)
 	/**/
-	.page-content
-		padding
-			top: 110px 
 
 	.window
 		&-menu
 			&-ham
 				width: 55px
 			&-sidebar
+				width: 200px
 				padding: 15px 
 				&.is-opened
 					width: 200px
@@ -160,7 +179,7 @@
 @media only screen and (max-width : 992px)
 	/**/
 	.page-content
-		padding: 80px 0px 0
+		padding: get-rem(80px) 0px 0
 
 
 

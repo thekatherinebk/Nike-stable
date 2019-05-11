@@ -57,10 +57,7 @@ var owl =  $('.good-cart-carousel').owlCarousel({
 });
 
 responsiveOwl('.window-menu-ham', owl); 
-responsiveOwl('.on', owl); 
-
-
-
+responsiveOwl('.on-arrow', owl); 
 
 
 $('.window-menu-sidebar').click(function(){ 
@@ -99,10 +96,6 @@ function responsiveOwl (trig, carousel) {
 }
 
 
-
-
-
-
 $('.package-view-carousel').owlCarousel({
   loop: true,
   items: 1,  
@@ -115,7 +108,7 @@ $('.package-view-carousel').owlCarousel({
 
 
 responsiveOwl('.window-menu-ham', $('.package-view-carousel')); 
-responsiveOwl('.on', $('.package-view-carousel')); 
+responsiveOwl('.on-arrow', $('.package-view-carousel')); 
 
 
 $('.features-composition-carousel').owlCarousel({
@@ -193,12 +186,14 @@ $('.menu-carousel').owlCarousel({
 
 $(function() {
   $('.window-menu-ham').on('click', function() {
+    $('.on-arrow').toggleClass('is-active');
     $('.window-menu-sidebar').toggleClass('is-opened');
     $('.window-menu-content').toggleClass('is-small-width');
 
   });
 
-  $('.on').on('click', function() {
+  $('.on-arrow').on('click', function() {
+    $('.on-arrow').removeClass('is-active');
     $('.window-menu-sidebar').removeClass('is-opened');
     $('.window-menu-content').removeClass('is-small-width');
   });
@@ -228,7 +223,7 @@ $('.cart-gallery-carousel').owlCarousel({
 
 
 responsiveOwl('.window-menu-ham', $('.cart-gallery-carousel')); 
-responsiveOwl('.on', $('.cart-gallery-carousel')); 
+responsiveOwl('.on-arrow', $('.cart-gallery-carousel')); 
 
 
 

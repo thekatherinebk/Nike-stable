@@ -1,12 +1,12 @@
-{% set title = 'Offer' %}
-{% set page__title = offer__page' %}
+{% set title = 'Offer-cart' %}
+{% set page__title = 'offer__page' %}
 
 {% extends 'layout/_account-layout.html' %}
 
 
 {% block header %}
 
-	{% include "partials/_header-auth.html" %}
+{% include "partials/_header-auth.html" %}
 
 {% endblock %}
 
@@ -14,52 +14,66 @@
 
 {% block content %}
 
-	<section class="accounts-home">
-
-
+<section class="offer-cart">
+	<div class="cart-gallery">
+		<div class="cart-gallery-valuation">
+			<button class="cart-gallery-valuation__btn rating-hand-btn"><i class="fas fa-thumbs-up"></i></button>
+			<button class="cart-gallery-valuation__btn rating-hand-btn"><i class="fas fa-thumbs-down"></i></button>
+		</div>
+		<div class="cart-gallery-carousel owl-carousel" data-slider-id="1">
+			<div class="cart-gallery-carousel__item" style="background-image: url(../img/items/good2.png)">
+			</div> 
+			<div class="cart-gallery-carousel__item" style="background-image: url(../img/home/2.png)">
+			</div>
+			<div class="cart-gallery-carousel__item" style="background-image: url(../img/home/food.png)">
+			</div>
+		</div>
+		<div class="owl-thumbs" data-slider-id="1">
+		    <button class="owl-thumb-item" style="background-image: url(../img/items/good2.png)"></button>
+		    <button class="owl-thumb-item" style="background-image: url(../img/home/2.png)"></button>
+		    <button class="owl-thumb-item" style="background-image: url(../img/home/food.png)"></button>
+		</div>
+	</div>
+	<div class="cart-info">
+		<div class="cart-info__title">
+			Nike Zoom Running Package
+		</div>
 		
-		{% include "partials/_good-cart-section.html" %}
-
-
-		<div class="feedback-cart-wrap">
-
-			{% include "partials/_feedback-cart.html" %}
-
-			<div class="feedback-cart">
-				<div class="feedback-cart__content"><!-- 
-				 --><div class="feedback-cart__user-img"><img class="img-responsive" src="../img/items/user2.png" alt="user"></div>
-					<div class="feedback-cart__composition">
-						<div class="feedback-cart__user-name">User 2001</div>
-						<div class="feedback-cart__time">24 min ago</div>
-						<div class="feedback-cart__text">
-							It's Nike your favorite sport brand ever! Now we make a new field for our users. Why? Because we think that we want to help you more in your life. So, we choose the healthy food field for you to be the super feature in your next life.
-						</div>
-						<button class="feedback-cart__btn rating-hand-btn btn-grey"><i class="fas fa-thumbs-up"></i></button>
-						<button class="feedback-cart__btn rating-hand-btn btn-grey"><i class="fas fa-thumbs-down"></i></button>
+			<!-- package-view__receipt -->
+			<div class="ingredients-box cart-info__composition">
+				<div class=" ingredients-box__title">
+					<div class="ingredients-box__header ">Ingredients</div> 
+					<div class="rating-stars">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="far fa-star"></i>
 					</div>
 				</div>
-				<div class="feedback-cart__img" style="background-image: url(../img/items/meal2.png);"></div>
-			</div>			
-			<div class="feedback-cart">
-				<div class="feedback-cart__content"><!-- 
-				 --><div class="feedback-cart__user-img"><img class="img-responsive" src="../img/items/user3.png" alt="user"></div>
-					<div class="feedback-cart__composition">
-						<div class="feedback-cart__user-name">User 2001</div>
-						<div class="feedback-cart__time">24 min ago</div>
-						<div class="feedback-cart__text">
-							It's Nike your favorite sport brand ever! Now we make a new field for our users. Why? Because we think that we want to help you more in your life. So, we choose the healthy food field for you to be the super feature in your next life.
-						</div>
-						<button class="feedback-cart__btn rating-hand-btn btn-grey"><i class="fas fa-thumbs-up"></i></button>
-						<button class="feedback-cart__btn rating-hand-btn btn-grey"><i class="fas fa-thumbs-down"></i></button>
-					</div>
-				</div>
-				<div class="feedback-cart__img" style="background-image: url(../img/items/meal3.png);"></div>
-			</div>		
+				<p class="ingredients-box__content">
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+				</p>
+			</div>
 
-		</div>	
-		<div class="see-more-button button">See more   <i class="fas fa-arrow-down"></i></div>
+			<div class="cart-info__cta">
+				<div class="cart-info__price">20$</div>	
+				<i class=" cart-info__basket fas fa-cart-plus"></i>
+				<button class="cart-info__btn btn">Eat Now</button>	
+				
+				<div class="cart-info-colors">
+					<button class="cart-info-colors__circle"></button>
+					<button class="cart-info-colors__circle  is-active "></button>
+					<button class="cart-info-colors__circle "></button>
+					<button class="cart-info-colors__circle "></button>
+					<button class="cart-info-colors__circle "></button>
+				</div>
+			</div>	
 		
-	</section>
+	</div>
+</section>
+
+
 
 
 {% endblock %}
@@ -68,6 +82,6 @@
 
 {% block footer %}
 
-	{% include 'partials/_footer.html' %}
+{% include 'partials/_footer.html' %}
 
 {% endblock %}
