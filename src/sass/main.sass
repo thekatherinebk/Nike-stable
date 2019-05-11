@@ -3,8 +3,6 @@
 @import "mixins"
 @import "fonts"
 @import "components/all"
-@import "mobile-menu"
-@import "owl-carousel"
 @import "log-in"
 @import "create-account"
 @import "nike-bot"
@@ -39,6 +37,13 @@ form
 input, textarea
 	padding: 0
 
+
+input,
+textarea,
+button,
+select,
+a 
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
 
 *::-webkit-input-placeholder
 	color: #666
@@ -94,8 +99,6 @@ h1, h2, h3, h4, h5, h6
 	display: block
 	max-width: 100%
 	height: auto
-	//img
-		//max-width: 100%
 
 .center
 	text-align: center
@@ -106,7 +109,6 @@ h1, h2, h3, h4, h5, h6
 	padding-top: $header-height
 	overflow: hidden
 	height: auto
-
 
 // __________________________________________________________
 

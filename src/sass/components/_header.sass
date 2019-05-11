@@ -46,24 +46,30 @@
 				margin: 0 1rem 0 0
 			&:last-child
 				margin: 0 0 0 1rem
+	&__auth
+		display: flex
 
-	&-auth
-
-		&__btn
-			margin: 0 0 0 1rem
+.auth
+	display: flex
+	&__btn
+		margin: 0 0 0 1rem
 
 .logo
-	margin: 0 -20px
+	margin: 0 -26px
+	.is-active
+	z-index: 150
 
 	
 .just-it-btn
-	font-size: get-rem(20px)
-	margin: 0 0 0 1rem	
+	font-size: get-rem(20px)	
 	font-weight: 700
 	.fas
 		color: #000
 	&:last-child
 		padding: 0 2rem
+		margin-left: 1rem
+
+
 
 .main-menu
 	display: flex
@@ -107,52 +113,6 @@
 				font-weight: 700
 			&::before, &::after
 				opacity: 1
-
-.user
-	&-nav
-		display: flex
-		justify-content: space-around
-		align-items: center
-		&__item
-			position: relative
-			margin: 0 get-rem(16px)
-			&:first-child, &:last-child
-				&::before
-					margin: auto
-					position: absolute
-					top: 0
-					bottom: 0
-					left: -1rem
-					content: ' '
-					width: 1px
-					height: 28px
-					background-color: $grey-text
-			.fas, .far	
-				font-size: get-rem(28px)
-				margin-right: get-rem(13px)
-		&__link
-			display: flex
-			align-items: center
-			font-size: 1rem
-			transition: all .3s ease
-			&:hover
-				color: $accent
-			&:active
-				color: darken($accent, 10%)
-
-
-		&-profile
-			position: relative
-			display: flex
-			justify-content: space-between
-			align-items: center
-
-			&__img
-				width: get-rem(43px)
-			&__name
-				font-weight: 700
-				margin: 0 get-rem(14px)
-				white-space: nowrap
 				
 
 .search-form
@@ -205,14 +165,22 @@
 			left: 4.2vmax
 			right: 4.2vmax
 
+	.just-it-btn
+		&:last-child
+			padding: 
+				left: 1rem
+				right: 1rem
+
+@media only screen and (max-width : 1100px)
+
+	.header__auth, .main-menu
+		display: none
+	
 
 @media only screen and (max-width : 568px)
-	
+
 	.padding
 		&-1, &-2
 			padding: 
 				left: 3.5vw
 				right: 3.5vw
-
-
-//1024px - hide menu

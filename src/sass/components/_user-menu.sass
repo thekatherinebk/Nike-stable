@@ -1,0 +1,59 @@
+.user
+	&-nav
+		display: flex
+		justify-content: space-around
+		align-items: center
+		&__item
+			display: flex
+			position: relative
+			margin: 0 get-rem(16px)
+			&:first-child, &:last-child
+				&::before
+					margin: auto
+					position: absolute
+					top: 0
+					bottom: 0
+					left: -1rem
+					content: ' '
+					width: 1px
+					height: 28px
+					background-color: $grey-text
+			.fas, .far	
+				font-size: get-rem(28px)
+				margin-right: get-rem(13px)
+		&__link
+			display: flex
+			align-items: center
+			font-size: 1rem
+			transition: all .3s ease
+			&:hover
+				color: $accent
+			&:active
+				color: darken($accent, 10%)
+
+
+		&-profile
+			position: relative
+			display: flex
+			justify-content: space-between
+			align-items: center
+
+			&__img
+				width: get-rem(43px)
+			&__name
+				font-weight: 700
+				margin: 0 get-rem(14px)
+				white-space: nowrap
+
+@media only screen and (max-width : 1100px)
+
+	.user-nav
+		&__item
+			display: none
+			&:nth-child(4)
+				display: flex
+		&-profile
+			&__img
+				margin-right: .76471rem
+			&__name
+				display: none

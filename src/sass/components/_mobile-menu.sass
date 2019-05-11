@@ -1,0 +1,74 @@
+.mobile-menu
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+	width: 100vw
+	height: 100vh
+	justify-content: space-between
+	flex-direction: column
+	align-items: center
+	padding: 15px
+	transform: translateY(-100%)
+	background-color: $bgc	
+	z-index: -10
+	overflow: auto
+	transition: all .7s ease
+
+	
+	&__is-open
+		transform: translateY(0)
+		z-index: 100
+		transition: all .7s ease
+
+
+	&__container 
+		display: flex
+		height: 100%
+		flex-direction: column
+		justify-content: space-between
+		min-height: 300px
+	
+	&__content
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		height: 100%
+
+	&__nav
+		display: flex
+		flex-direction: column
+		min-height: 220px
+		align-items: center
+		li
+			margin: .5rem 0
+			font-weight: 400
+			font-weight: 600
+			font-size: 1.3rem
+			a
+				font-weight: 700 
+				font-size: 1.3rem
+				color: $accent
+				transition: all .3s ease
+				&:active
+					color: darken($accent, 20%)
+				i
+					margin-right: 1rem
+
+	&__footer
+		margin: 2rem 0
+		display: flex
+		justify-content: space-between
+	&__auth
+		width: 100%
+
+
+@media only screen and (max-width: 1100px)
+	.mobile-menu
+		display: flex
+
+
+@media only screen and (max-width: 768px)
+	.mobile-menu
+		overflow: auto

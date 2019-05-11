@@ -13,12 +13,14 @@
 
 			</div>
 			
-			<div class="header-item__content header-auth">
-				
-				<button class="header-auth__btn btn-transp btn-pad fa"> 2 <i class="fas fa-shopping-cart"></i></button>
-				<a href="log-in.html" class="header-auth__btn btn-grey btn-pad">Log in </a>
-				<a href="create-account.html"class="header-auth__btn btn-accent btn-pad">Sign up</a>
-
+			<div class="header-item__content">
+				<div class="header__auth">
+					<div class="auth">
+						<button class="auth__btn btn-transp btn-pad fa"> 2 <i class="fas fa-shopping-cart"></i></button>
+						<a href="log-in.html" class="auth__btn btn-grey btn-pad">Log in </a>
+						<a href="create-account.html"class="auth__btn btn-accent btn-pad">Sign up</a>
+					</div>
+				</div>
 			</div>
 
 		</div>
@@ -28,6 +30,13 @@
 
 
 			<div class="header-item__content">
+
+				<div class="hamburger" id="hamburger">
+					<span class="line"></span>
+					<span class="line"></span>
+					<span class="line"></span>
+				</div>
+
 				<nav>
 					<ul class="main-menu">
 						<li><a href="index.html" class="is-active">Home</a></li>
@@ -36,14 +45,37 @@
 						<li><a href="#">Challenges</a></li>
 						<li><a href="#">Menu</a></li>
 					</ul>
-
+					
 				</nav>
+				<div class="mobile-menu">
+					<div class="mobile-menu__container">
+						<div class="mobile-menu__content">
+							<ul class="mobile-menu__nav">
+								<li><a href="index.html" class="is-active">Home</a></li>
+								<li><a href="news.html">News</a></li>
+								<li><a href="offer-page.html">Features</a></li>
+								<li><a href="#">Challenges</a></li>
+								<li><a href="#">Menu</a></li>
+							</ul>
+						</div>
+						<div class="mobile-menu__footer">
+							<div class="mobile-menu__auth">
+								<button class="auth__btn btn-transp btn-pad fa"> 2 <i class="fas fa-shopping-cart"></i></button>
+								<a href="log-in.html" class="auth__btn btn-grey btn-pad">Log in </a>
+								<a href="create-account.html"class="auth__btn btn-accent btn-pad">Sign up</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+
 			</div>
 			
 			<div class="header-item__content">
 
 				<a href="#" class="just-it-btn btn-pad btn-grey"><i class="fas fa-globe-americas"></i></a>
 				<a href="#" class="just-it-btn  btn-pad btn-accent">Just Eat it!</a>	
+				
 			</div>
 		</div>
 

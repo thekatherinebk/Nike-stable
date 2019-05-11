@@ -12,13 +12,18 @@
 
 			</div>
 			
-			<div class="header-item__content header-auth">
+			<div class="header-item__content">
+				<div class="header__auth">
+					<div class="auth">
+						<button class="header-auth__btn btn-transp btn-pad fa"> 2 <i class="fas fa-shopping-cart"></i></button>
+						<form class="search-form" action="#" method="post">
+							<i class="fas fa-search"></i>
+							<input id="search-form__field" class="search-form__field" type="text" placeholder="Search for something ...">
+						</form>
+					</div>
 				
-				<button class="header-auth__btn btn-transp btn-pad fa"> 2 <i class="fas fa-shopping-cart"></i></button>
-				<form class="search-form" action="#" method="post">
-					<i class="fas fa-search"></i>
-					<input id="search-form__field" class="search-form__field" type="text" placeholder="Search for something ...">
-				</form>
+				</div>
+				
 
 			</div>
 
@@ -46,13 +51,47 @@
 					</div>
 
 					<div class="user-nav__item">
-						<button class="user-nav-profile">
+						<button class="user-nav-profile menu-trigger">
 							<img class="user-nav-profile__img img-responsive " src="../img/user.png" alt="icon">
-							<span href="#" class="user-nav-profile__name">Saad M.</span>
+							<span class="user-nav-profile__name">Saad M.</span>
 							<i class="fas fa-angle-down"></i>
 						</button>
 					</div>
-				
+
+
+					<div class="mobile-menu">
+						<div class="mobile-menu__container">
+							<div class="mobile-menu__content">
+								<ul class="mobile-menu__nav">
+
+									<li class="menu-trigger">
+										<img class="img-responsive " src="../img/user.png" alt="icon">
+									</li>
+
+									<li class="menu-trigger" >
+										Saad M.
+										<i class="fas fa-angle-down"></i>
+									</li>
+
+									<li>
+										<a href="#" class="user-nav__link"><i class="fas fa-envelope-open-text"></i>  Messages</a>
+									</li>
+
+									<li>
+										<a href="#" class="user-nav__link"><i class="far fa-bell"></i>  Notifications</a>
+									</li>
+									
+								</ul>
+							</div>
+							<div class="mobile-menu__footer">
+								<button class="header-auth__btn btn-transp btn-pad fa"> 2 <i class="fas fa-shopping-cart"></i></button>
+								<a href="#" class="user-nav__link"><i class="fas fa-question"></i></a>
+								
+							</div>
+						</div>
+					</div>
+
+
 				</div>
 
 			</div>
@@ -60,7 +99,8 @@
 			<div class="header-item__content">
 
 				<a href="#" class="just-it-btn btn-pad btn-grey"><i class="fas fa-globe-americas"></i></a>
-				<a href="#" class="just-it-btn  btn-pad btn-accent">Just Eat it!</a>	
+				<a href="#" class="just-it-btn  btn-pad btn-accent">Just Eat it!</a>
+
 			</div>
 		</div>
 
