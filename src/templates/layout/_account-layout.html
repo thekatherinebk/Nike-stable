@@ -18,7 +18,7 @@
 	<main class="page-content">
 		<div class="window-container">
 
-			<aside class="window-menu-sidebar">
+			<aside class="window-menu-sidebar" id="sidebar">
 				<nav class="menu-sidebar">
 					<ul>
 						<li class="menu-sidebar__item {{home}}"><a href="#">Home</a></li>
@@ -32,11 +32,11 @@
 					</ul> 
 					
 					
-				</nav> 	
+				</nav> 		
 			</aside>
 			<section class="window-menu-content">
-				<div class="window-menu-ham">
-					<button class="window-menu-ham__button">
+				<div class="window-menu-ham" onclick="openSidebar()">
+					<button class="window-menu-ham__button ">
 						<span></span>
 						<span></span>
 						<span></span>
