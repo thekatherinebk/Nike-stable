@@ -44,7 +44,7 @@ button
 	vertical-align: top
 	transition: all .4s ease
 	border-radius: 10em
-	height: 3vmax
+	height: get-rem(48.8px)
 	min-height: 28px
 	background-color: $accent
 	color: #fff
@@ -71,8 +71,10 @@ button
 	
 .btn
 	@extend %btn-base
-	width: 9vmax
-	min-width: 85px
+	width: 9vw
+	min-width: 90px
+
+	//was 85
 	
 	//to do: refactor code to delete (.button.grey)
 	&-accent

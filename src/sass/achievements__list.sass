@@ -1,8 +1,3 @@
-.history 
-	.ach-title__btn
-		&::before
-			display: none
-
 .ach
 	&-title
 		line-height: 1
@@ -19,31 +14,21 @@
 			align-items: center
 		&__amnt
 			margin:
-				right: 37px
+				right: 2rem
 				left: 5px
 		&__btn
-			height: 3vmax
-			font-weight: 700 
-			width: 9vmax
-			min-width: 85px
-			margin-left: 37px
-			min-height: 28px
+			margin-left: 2rem
 			&::before
 				content: ""
 				width: 1px
-				height: 55.8%
+				height: get-rem(28px)
 				background-color: #000
 				position: absolute
-				left: -37px
-				top: 22.1%
-			&.button
-				font-weight: 700
-				font-family: inherit
-				padding: 0	
-				font-size: 1.17em
-	
-	&-items-wrap
-
+				left: -2rem
+				top: 0
+				bottom: 0
+				margin: auto
+			
 
 	&-line
 		display: flex
@@ -83,21 +68,9 @@
 				left: -18px
 
 
-@media only screen and (max-width : 1560px)
-	/**/
 
-@media only screen and (max-width : 1200px)
-	/**/
 @media only screen and (max-width : 768px)
 	/**/
-	.ach-title
-		&__amnt
-			margin-right: 10px
-		&__btn
-			margin-left: 10px
-			&::before
-				left: -10px
-
 
 	.ach-line
 		font-size: 9px
@@ -120,9 +93,19 @@
 	.ach-title
 		flex-wrap: wrap
 
+
 		&__h, &__total
 			width: 100%
-			text-align: left
+			text-align: center
 		&__total
-			margin: 8px 0
-			justify-content: flex-end
+			margin: 1rem 0
+			justify-content: center
+
+		&__btn
+			margin-left: 1rem
+			&:before
+				left: -1rem 	
+		&__amnt
+			margin-right: 1rem
+
+

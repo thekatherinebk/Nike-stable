@@ -8,25 +8,16 @@
 	background-color: rgba($light-grey, .5)
 
 
-
-
-@mixin transitionAll()
-	transition: all .4s ease-in-out
-
 .window
 	&-container
 		width: 100%
 		position: relative
 		background-color: #fff
 		height: auto
-		//overflow: hidden
-
 
 	&-menu
 		
-		
 		&-sidebar
-			display: none
 			width: 276px
 			position: absolute
 			top: 0
@@ -34,21 +25,21 @@
 			padding: 23px 28px 
 			background-color: $light-grey
 			height: 100%
-			transform: translateX(-276px)
+			transform: translateX(-400px)
+			transition: all .4s ease-in-out
+			z-index: -1
+
 			&.is-opened
-				display: block
 				transform: translateX(0)
-				transition: all .4s ease 
+				transition: all .4s ease-in-out	.05s
 				z-index: 9
-
-
 
 		&-content
 			max-width: 100%
 			width: 100%
 			height: auto
 			background-color: #fff
-			padding-left: 77px
+			padding-left: get-rem(77px)
 			@include transitionAll()
 			&.is-small-width
 				padding-left: 276px
@@ -61,7 +52,7 @@
 			opacity: 1
 			background-color: $light-grey
 			height: 100%
-			width: 77px
+			width: get-rem(77px)
 			z-index: 5
 			@include transitionAll()
 
@@ -115,7 +106,6 @@
 			font-weight: 700
 			border-bottom-color: $accent
 		
-
 		&.is-active
 			color: $accent
 			font-weight: 700
@@ -136,21 +126,10 @@
 	&.is-active
 		display: inline-block
 		right: -38px
-
 	&:hover
-
 		background-color: $accent
 		.fas
 			color: #fff
-
-#accounts__page
-	.on-arrow
-		top: 0
-
-#offer__page
-	.on-arrow
-		top: 43px	
-
 
 
 @media only screen and (max-width : 1560px)
@@ -158,23 +137,15 @@
 
 	.window
 		&-menu
-			&-ham
-				width: 55px
+			
 			&-sidebar
 				width: 200px
 				padding: 15px 
 				&.is-opened
 					width: 200px
 			&-content
-				padding-left: 55px
 				&.is-small-width
 					padding-left: 200px
-
-
-
-@media only screen and (max-width : 1200px)
-	/**/
-
 
 @media only screen and (max-width : 992px)
 	/**/
@@ -186,31 +157,29 @@
 @media only screen and (max-width : 768px)
 	/**/
 	.window
-		&-menu
-			&-sidebar
-				&.is-opened
-					width: 170px
-			&-content
-				&.is-small-width
-					padding-left: 170px
-
-@media only screen and (max-width : 576px)
-	/**/
-	.window
 		
 		&-menu
+			&-ham
+				width: 45px
+				&__button 
+					width: 40px
+					span
+						margin:
+							left: 5px
+							right: 5px
 			&-sidebar
-				padding: 40px
+				padding: 6rem 40px 40px
 				text-align: center
+				position: fixed
+
 				&.is-opened
-					width: 100%
-					position: fixed
-
+					z-index: 20
+					width: 100vw
 					height: 100%
+					
 
-			&-content.is-small-width
-				padding-left: 55px
-
-@media only screen and (max-width : 320px)
-	/**/
+			&-content
+				padding-left: 45px
+				&.is-small-width
+					padding-left: 45px
 

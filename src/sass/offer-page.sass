@@ -1,0 +1,187 @@
+#offer-cart__page
+	.block-content
+		margin: 0
+		max-width: 100%
+
+
+.offer-cart
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+
+.cart
+	&-gallery
+		flex-grow: 1
+		flex-basis: 300px
+		max-width: 696px
+		min-width: 221px
+
+		&-valuation
+			display: flex
+			justify-content: space-between
+
+			&__btn
+				font-size: 100px
+				background-image: radial-gradient($light-grey, white)
+				transition: all .4s ease
+				&:hover, &:active
+					.fas
+						color: lighten($accent, 5%)
+
+				&:active
+					.fas
+						color: darken($accent, 5%)
+
+		
+		&-carousel
+			display: flex
+
+			&__item 
+				padding: 32% 0
+				background-size: contain
+				background-repeat: no-repeat
+				background-position: center
+		
+
+
+			&.owl-carousel
+				.owl-item
+					padding: 0 10px
+					margin: 
+						top: 0
+						bottom: 0
+
+				.owl-dots
+					text-align: center
+					height: 10px
+					position: relative
+					top: 12rem
+
+
+				.owl-dot
+					width: 9px
+					height: 9px
+					background-color: $accent
+					margin: 0 5px
+					border-radius: 10em
+					transition: all .4s ease
+					&.active
+						width: 38px
+					
+				.owl-nav 
+					button
+						&.owl-next, &.owl-prev
+							display: inline-block
+							top: 50%
+							background-color: #fff
+							width: 2.7rem
+							height: 2.7rem
+							color: #000
+							line-height: 2.7rem
+							border-radius: 10em
+							position: absolute
+							z-index: 10
+							transition: all .3s ease
+							&:active, &:hover
+								background-color: $accent
+								color: #fff
+							.fas
+								font-size: 1.08rem
+
+						&.owl-next
+							right: 0
+
+		.owl-thumbs
+			width: 100%
+			display: flex
+			justify-content: space-between
+			margin: 1rem 0 5.65rem
+
+		.owl-thumb-item
+			width: 25% 
+			padding: 8% 0
+			opacity: .5
+			transition: all .4s ease
+			background-size: contain
+			background-repeat: no-repeat
+			background-position: center
+
+			&.active
+				transform: scale(1.7)
+				opacity: 1
+
+
+
+	&-info
+		width: 26.5vmax
+		min-width: 221px
+		margin-left: 5%
+		flex-shrink: 2
+
+		&__title
+			font-size: 3.4vmax
+			line-height: 1
+			color: #000	
+			font-weight: 700
+			margin-bottom: 1.5rem
+
+		&__composition
+			padding-bottom: 2.7vmax
+			border-bottom: 1px solid black
+		&__cta
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			width: 21.3vmax
+			min-width: 221px
+			margin-top: 5.57vmax
+			color: #000
+			// .fas
+			// 	font-size: inherit
+		&__price, &__basket
+			font-size: 1.765rem
+			font-weight: 700
+			&.fas
+				font-size: 1.765rem
+				font-weight: 700
+				line-height: inherit
+
+
+		&-colors
+			width: 100%
+			display: flex
+			justify-content: space-between
+			margin-top: 3.18vmax	
+			align-items: center
+			&__circle
+				width: 3.294rem	
+				height: 3.294rem
+				border-radius: 10em
+				transition: all .4 ease
+				&:hover, &:active
+				&.is-active
+					width: 4.94rem
+					height: 4.94rem
+
+
+				
+
+$colors: $yellow, $grey, $blue, $rose, $violet
+
+@for $i from 1 through length($colors)
+
+	.cart-info-colors__circle:nth-child(#{length($colors)}n+#{$i}) 
+		background-color: nth($colors, $i)
+
+
+@media only screen and (max-width : 576px)
+	/**/
+
+	.cart-info
+		margin-left: 0
+		
+
+@media only screen and (max-width : 480px)
+	/**/
+	.cart-gallery-carousel.owl-carousel .owl-dots
+		top: 9rem

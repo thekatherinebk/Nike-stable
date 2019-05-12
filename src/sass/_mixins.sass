@@ -1,3 +1,6 @@
+@mixin transitionAll()
+	transition: all .4s ease-in-out
+
 @function get-vw($target)
 	$vw-context: (1920 * .01) * 1px
 	@return ($target / $vw-context) * 1vw

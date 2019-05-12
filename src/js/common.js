@@ -12,7 +12,10 @@ $('.menu-trigger').click( function() {
   $('.logo').toggleClass('is-active');
   $('.mobile-menu').toggleClass('mobile-menu__is-open');
 });
-  
+
+
+$('.menu-sidebar__item.is-active').append('<button class="on-arrow"><i class="fas fa-arrow-left"></i></button>'); 
+
 
 //connected library selectize
 

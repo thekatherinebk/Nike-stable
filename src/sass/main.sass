@@ -1,6 +1,6 @@
 @import "libs"
-@import "vars"
 @import "mixins"
+@import "vars"
 @import "fonts"
 @import "components/all"
 @import "log-in"
@@ -9,9 +9,8 @@
 @import "window-container"
 @import "accounts-home"
 @import "offer"
-@import "news-page"
 @import "achievements__list"
-@import "offer-cart-page"
+@import "offer-page"
 @import "basket"
 
 html
@@ -195,6 +194,10 @@ h1, h2, h3, h4, h5, h6
 	.option
 		padding: 22px 28px
 		font-size: 15px
+
+		.active
+			background-color: lighten($accent, 45%)
+
 		
 .selectize-control .option.active, .selectize-input .option.active
 	background-color: lighten($accent, 45%)
