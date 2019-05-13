@@ -1,7 +1,6 @@
 .package-view-section
 	width: 100%
-	padding: 20px 82px 20px 20px
-
+	padding: 20px get-rem(47px) 20px
 
 .package-view-wrap
 	max-width: 1058px 
@@ -11,10 +10,10 @@
 			button
 				&.owl-prev, &.owl-next
 					background-color: #fff
-					width: 47px
-					height: 47px
+					width: get-rem(47px)
+					height: get-rem(47px)
 					color: #000
-					line-height: 47
+					line-height: get-rem(47px)
 					border-radius: 10em
 					position: absolute
 					top: 247px
@@ -25,15 +24,13 @@
 						color: #fff
 
 				&.owl-prev
-					left: -40px
+					left: get-rem(-94px)
 					display: inline-block
 				&.owl-next
-					right: -100px
+					right: get-rem(-94px)
 		.owl-dots
 			text-align: center
 			height: 10px
-
-
 		.owl-dot
 			width: 9px
 			height: 9px
@@ -45,53 +42,44 @@
 				width: 38px
 
 
-
-
 .package-view
 	width: 100%
 	position: relative
-	padding: 0 0 4.2vmax 
+	padding: 9% 0 4.2vw
+	display: flex
+	flex-direction: column
+	justify-content: space-between
 	background-size: contain
 	background-position: top center
 	background-repeat: no-repeat
-
-	&__title
-		padding-top: 11%
-		text-align: right
-		right: 0
-		&-unit
-			font-size: 1.563vmax
-			font-weight: 700
-			color: #000
-			margin: 0
-
-	&__h 
-		display: inline-block	
-		font-size: 5.2vmax
-		border-bottom: 1px solid $grey-text
-		line-height: 1
-		padding-bottom: 1.5rem
-	&__info
-		width: 100%
+	&__container
 		display: flex
-		justify-content: space-around
-		align-items: center
-		margin-top: 26.5%
-
-
-	&__receipt
-		//width: 33%
-
+		flex-direction: column
+		align-items: flex-end
+		color: #000
+		font-size: get-rem(20px)	
+		&:nth-child(2)
+			flex-direction: row
+			justify-content: space-around
+			margin-top: 26.5%
+			align-items: center
+	&__title
+		font-weight: 700
+		font-size: 5.2vw
+		border-bottom: 1px solid $grey-text
+		line-height: 1.5
+	&__sub-title
+			font-size: get-rem(30px)
+			font-weight: 700
+			margin: 0
+	&__box
+		flex-grow: 1
+		max-width: 410px
 	&__cta
-		width: 182px
+		width: 173px
 
-	
 	&__btn
-		display: block
 		margin: 17px auto 0
-
-
-
 
 @media only screen and (max-width : 1560px)
 	/**/
@@ -102,23 +90,27 @@
 @media only screen and (max-width : 1200px)
 	/**/
 	.package-view
-		&-section
-			padding-right: 40px
 		&-wrap
 			.owl-carousel
 				.owl-nav
 					button
 						&.owl-prev, &.owl-next
 							top: 180px
+						&.owl-prev
+							left: get-rem(-47px)
 
 						&.owl-next
-							right: -58px
+							right: get-rem(-47px)
 
 
-	
 
 @media only screen and (max-width : 992px)
 	/**/
+	.package-view
+		&__container
+			&:nth-child(2)
+				margin-top: 30%
+				flex-direction: column
 
 
 @media only screen and (max-width : 768px)
@@ -126,29 +118,15 @@
 	.package-view
 		padding-top: 0
 		&-section
-			padding-right: 20px
-		&-wrap
-			.owl-carousel
-				.owl-nav
-					button
-						&.owl-prev, &.owl-next
-							top: 120px
-						&.owl-prev
-							left: -58px
-							
+			padding: 0 20px
 
+		&__title
+			font-size: 35px
 
-		&__receipt
-			padding: 0 10%
-
-
-
-@media only screen and (max-width : 576px)
-	/**/
+@media only screen and (max-width : 480px)
 	.package-view
-		&__info
-				flex-wrap: wrap
-				flex-direction: column
-
-@media only screen and (max-width : 320px)
-	/**/
+		background-position: -10px 64px
+		&__title
+			align-items: center
+		&__container:nth-child(2)
+			margin-top: 44%
