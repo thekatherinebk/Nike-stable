@@ -17,34 +17,58 @@
 
 	<section class="profile-s">
 
-	<div class="profile-wrap">
-		<div class="profile-part ">
-			<div class="grey-square title-h3">
-				Spent: 1200$ 
+	<div class="profile">
+
+		<div class="profile__item ">
+			
+			<div class="profile__container">
+
+				<div class="grey-square title-h3">	Spent: 1200$ </div>
+				<div class="prof-white">Member 2 years ago</div>
+
 			</div>
-			<div class="prof-white">Member 2 years ago</div>
+
+			<div class="grey-square title-h3">
+				270р
+			</div>
+
 		</div>
-		<div class="profile-part grey-square title-h3">270р</div>
 	
-		<div class="profile-part">
-			<img class="img-responsive profile-img"	src="../img/items/saadmuhamed3.png" alt="">
-			<div class="user-name page-title">Saad Muhamed</div>
+		<div class="profile__item">
+
+			<div class="profile__container">
+
+				<img class="img-responsive profile__img"	src="../img/items/saadmuhamed3.png" alt="">
+				<div class="profile__name">Saad Muhamed</div>
+			</div>
+
 		</div>
-		<div class="profile-part">
-			<div class="grey-square title-h3">
-				Customer: Prime 
-				<i class="fas fa-star"></i> 
+
+
+		<div class="profile__item">
+
+			<div class="profile__container">
+			
+				<div class="grey-square title-h3">
+					Customer: Prime 
+					<i class="fas fa-star"></i> 
+				</div>
+
+				<div class="profile-status prof-white">
+					<div class="circle"></div>
+					Log out
+				</div>
 			</div>
-			<div class="profile-status prof-white">
-				<div class="circle"></div>
-				Log out
-			</div>
+
 		</div>
 	</div>
 
 	<div class="feedback-wrap">
+		
+
 		{% include "partials/_feedback-item.html" %}
 		{% include "partials/_feedback-item.html" %}	
+		
 	</div>
 		
 

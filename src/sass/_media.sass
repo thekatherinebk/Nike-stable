@@ -59,20 +59,13 @@
 	//end of log-in page
 
 	// owl-carousel
+
 	.owl-carousel 
 		.owl-nav
 			button
-
 				&.owl-next
 					top: 223px
 					right: -79px
-
-	.menu-carousel
-
-		&.owl-carousel
-			.owl-nav
-				button.owl-next
-					right: 0
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
@@ -166,8 +159,15 @@
 				&.owl-next
 					right: -33px
 
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
+	.menu-carousel
+		padding: 0 1rem
+
+	.news-items
+		flex-direction: column
+
 
 	.main-footer
 		.footer
@@ -205,14 +205,13 @@
     
 	.new-nike-text
 		margin-right: 0
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 576px)
 
 	.main-footer
 		.footer
 			&__top
-
-
 			&__menu
 				margin-top: 20px
 
@@ -246,7 +245,7 @@
 		.owl-nav
 			button
 				&.owl-next
-					right: -4px
+					right: 0
 					width: 35px
 					height: 35px
 					line-height: 35px

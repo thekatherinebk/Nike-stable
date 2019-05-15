@@ -12,6 +12,7 @@
 @import "achievements__list"
 @import "offer-page"
 @import "basket"
+@import "profile"
 
 html
 	font-size: 17px
@@ -66,7 +67,6 @@ a
 // base styles
 
 html, body 
-	height: 100%
 	margin: 0
 	padding: 0
 
@@ -359,8 +359,6 @@ input[type="search"]::-webkit-search-results-decoration
 
 
 //owl-carousel
-	
-
 .owl-carousel 
 	.owl-item 
 		backface-visibility: inherit
@@ -382,10 +380,10 @@ input[type="search"]::-webkit-search-results-decoration
 
 			&.owl-next, &.owl-prev
 				background-color: #fff
-				width: 47px
-				height: 47px
+				width: get-rem(47px)
+				height: get-rem(47px)
 				color: #000
-				line-height: 47
+				line-height: get-rem(47px)
 				border-radius: 10em
 				position: absolute
 				top: 247px
@@ -412,74 +410,9 @@ input[type="search"]::-webkit-search-results-decoration
 	font-weight: 700
 	color: #000
 
-//profile
-
-.profile-wrap
-	display: flex
-	border-bottom: 1px solid #000
-	padding-bottom: 58px
-	justify-content: space-between
-	align-items: flex-start
-
-.profile-part
-	// width: 33.33%
-	display: flex
-	flex-direction: column
-	
-.profile
-
-	&-img
-		margin: 0 auto
-
-
-.title-h3
-	text-align: center
-	font-size: 1.765em
-	font-weight: 700
-	color: #000
-.grey-square
-	background-color: $light-grey
-	padding: 0.73em
-	border-radius: 10px
-	white-space: nowrap
-	
-	.fas
-		color: #FA8231
-		font-size: inherit
-
-.prof-white
-	text-align: center
-	font-weight: 700
-	padding-top: 20px
-	.circle
-		border-radius: 10px
-		width: 10px
-		height: 10px
-		margin-right: 5px
-		background-color: red
-		display: inline-block
-
-//доробити
-
 .block-content
 	margin: 0 auto
 	max-width: 1161px
-
-//ingredients-box
-.info-box
-	width: 100%
-	color: #000
-	&__title
-		font-size: 1.765rem
-		font-weight: 700
-		display: flex
-		align-items: center		
-	&__price
-		padding-left: 2rem
-		color: $grey-text
-	&__content
-		font-weight: 300
-		font-style: italic
 
 
 .rating-stars
@@ -510,35 +443,40 @@ input[type="search"]::-webkit-search-results-decoration
 	
 
 .new-nike	
-	display: flex
+	&__container
+		max-width: 100%
+		display: flex
+
+	&__wrap
+		flex-basis: 795px
+		flex-shrink: 4
+		max-width: 100%
+		//width: 60%
+		margin: 6.2vw 0 5.3vw
 
 	&-title
 		display: flex
 		align-items: center
 		margin-bottom: 3.76rem
 		white-space: nowrap
-	&-wrap
-		width: 60%
-		margin: 6.2vmax 0 5.3vmax
+	
 
-	&-img
-		width: 37.5vmax
+	&__img
+		width: 37.5vw
 		position: absolute
 		top: 0
-		right: -13vmax
+		right: -13vw
 		padding: 25% 0 	
 		background-size: contain
 		background-position: center
 		background-repeat: no-repeat
+		+m(1600)
+			right: -6vw
 
 	&-text
 		padding: 0 1.53rem
 		border-left: 2px solid $accent
 		margin: 3.76rem 5.3vmax 3.76rem 2.66vmax
-
-
-.main-page-padding
-	padding: 0 14.48vmax
 
 #main-home__page
 	background-color: $bgc
@@ -589,10 +527,16 @@ input[type="search"]::-webkit-search-results-decoration
 	&-items
 		display: flex
 		justify-content: space-between
+		align-items: center
 		
 	&-item
-		width: 27.11%
+		position: relative
+		flex-basis: 30% 
+		max-width: 370px
 		text-align: center
+		justify-content: space-between
+		+m(768)
+			margin-bottom: 50px
 
 		&__video
 			margin-bottom: 4rem	
@@ -601,8 +545,9 @@ input[type="search"]::-webkit-search-results-decoration
 		&__cross
 			position: absolute
 			z-index: 5
-			top: 45%
-			width: 27.11%	
+			top: 36%
+			left: 0
+			width: 100%	
 			height: auto	
 
 		&__footwear
@@ -634,14 +579,14 @@ input[type="search"]::-webkit-search-results-decoration
 .features-main-s
 
 	padding: 
-		top: 12.9vmax 
-		bottom:  18.9vmax
+		top: 12.9vw
+		bottom:  18.9vw
 	.bg-img
 		position: absolute
-		top: -11.06vmax  
-		right: -14.48vmax 
-		left: -14.48vmax
-		bottom: -11.06vmax
+		top: -11.06vw 
+		right: -14.48vw
+		left: -14.48vw
+		bottom: -11.06vw
 		
 	.owl-carousel
 		.owl-item
@@ -657,7 +602,7 @@ input[type="search"]::-webkit-search-results-decoration
 			.owl-dots
 				width: 100%
 				position: absolute
-				bottom: -7.9vmax
+				bottom: -7.9vw
 				text-align: center
 
 				button.owl-dot
@@ -677,8 +622,10 @@ input[type="search"]::-webkit-search-results-decoration
 			.page-title
 				color: inherit
 		&__text
-			padding-right: 11.77vmax
-			margin: 3rem 0 0
+			max-width: 1125px
+			margin:
+				top: 3rem
+				bottom: 0
 
 .s
 	&-challenges
@@ -732,8 +679,10 @@ input[type="search"]::-webkit-search-results-decoration
 
 	&__comp
 		max-width: 50%
-		margin-left: 5.62vmax
-
+		margin-left: 5.62vw
+		+m(568)
+			max-width: 100%
+			margin: 5.62vw 0 0
 		a
 			transition: all .4s ease
 			&:hover, &:active
@@ -749,6 +698,8 @@ input[type="search"]::-webkit-search-results-decoration
 		align-items: center
 		padding: 0 7.29vmax 5.1vmax
 		margin-top: 5.88vmax 
+		+m(568)
+			flex-direction: column
 		&__title
 			font-size: 1.47rem
 			font-weight: 700
@@ -767,8 +718,15 @@ input[type="search"]::-webkit-search-results-decoration
 	left: 0
 	border-radius: 3rem
 	box-shadow: 0 0 20px rgba(#000, .12)
+	+m(992)
+		right: 2rem
+		left: 2rem
 .s-menu
 	margin-bottom: 7vmax
+
+.s-menu .s-title
+	margin-bottom: 0
+
 
 .menu-carousel
 	padding: 0 3rem
@@ -778,14 +736,13 @@ input[type="search"]::-webkit-search-results-decoration
 			button.owl-next
 				right: 1rem	
 				top: 55%
-				
+				+m(1560)
+					right: .5rem
+				+m(992)
+					right: .5rem
 	.good-cart__bgc
 		padding-top: 6rem
 
 
 
 @import "media"
-
-
-
-

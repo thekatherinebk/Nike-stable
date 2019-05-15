@@ -1,6 +1,4 @@
 
-
-
     // header mobile menu 
 
     $('.hamburger').click( function() {
@@ -57,7 +55,7 @@
           0: {
             items: 1,
           },
-          425: {
+          470: {
             items: 2, 
           },
           720: {
@@ -140,26 +138,19 @@
         nav: true,
         navText: ['<i class="fas fa-arrow-left"></i>', '<i class="fas fa-arrow-right"></i>'],
         autoHeight: true, 
-        responsiveClass: true,
         responsive: {
           0: {
             items: 1,
           },
-          425: {
+          540: {
             items: 2, 
           },
-          720: {
+          820: {
             items: 3,
           },  
-          
-          992: {
-            items:  3,
-          },
+
           1100: {
             items: 4,
-          }, 
-          1600: {
-            items: 4
           }
         }
     });

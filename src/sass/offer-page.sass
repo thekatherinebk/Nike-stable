@@ -6,15 +6,17 @@
 
 .offer-cart
 	display: flex
-	flex-wrap: wrap
 	justify-content: space-between
+	+m(768)
+		flex-wrap: wrap
 
 .cart
 	&-gallery
 		flex-grow: 1
-		flex-basis: 300px
-		max-width: 696px
+		flex-basis: 696px
+		flex-shrink: 1
 		min-width: 221px
+		max-width: 750px
 		&-valuation
 			display: flex
 			justify-content: space-between
@@ -47,6 +49,8 @@
 					height: 10px
 					position: relative
 					top: 12rem
+					+m(480)
+						top: 9rem
 				.owl-dot
 					width: 9px
 					height: 9px
@@ -95,6 +99,9 @@
 			background-size: contain
 			background-repeat: no-repeat
 			background-position: center
+			+m(768)
+				transform: scale(1.5)
+
 			&:nth-child(2)
 				margin: 0 -10px 0
 
@@ -103,17 +110,21 @@
 				opacity: 1
 
 	&-info
-		width: 26.5vw
-		min-width: 221px
+		flex-basis: 522px
+		min-width: 220px
 		margin-left: 5%
-		flex-shrink: 3
-
+		flex-shrink: 2
+		+m(768)
+			margin: 3rem auto
+			
 		&__title
 			font-size: 3.4vw
 			line-height: 1
 			color: #000	
 			font-weight: 700
 			margin-bottom: 1.5rem
+			+m(992)
+				font-size: 29px
 
 		&__composition
 			padding-bottom: 2.7vw
@@ -161,22 +172,3 @@ $colors: $yellow, $grey, $blue, $rose, $violet
 
 	.cart-info-colors__circle:nth-child(#{length($colors)}n+#{$i}) 
 		background-color: nth($colors, $i)
-
-@media only screen and (max-width : 992px)
-	.cart
-		&-info
-			&__title
-				font-size: 29px
-
-
-@media only screen and (max-width : 576px)
-	/**/
-	
-	.cart-info
-		margin-left: 0
-		
-
-@media only screen and (max-width : 480px)
-	/**/
-	.cart-gallery-carousel.owl-carousel .owl-dots
-		top: 9rem

@@ -3,6 +3,11 @@
 	justify-content: space-between
 	flex-wrap: wrap
 	margin: 0 -2.5rem
+	.owl-carousel 
+		.owl-nav 
+			button
+				&.owl-next, &.owl-prev
+					right: -4.5vw
 
 
 .good-cart-carousel
@@ -59,8 +64,6 @@
 		.fas
 			font-size: 1.53rem
 
-
-
 	&__button
 		width: 100%
 		font-weight: 700
@@ -78,15 +81,12 @@
 	/**/
 	.good-cart-wrap
 		margin: 0 -2rem
-
-
-
-
-
-@media only screen and (max-width : 1200px)
-	/**/
-
-		
+	
+		.owl-carousel 
+			.owl-nav 
+				button
+					&.owl-next, &.owl-prev
+						right: -5.2vw
 
 
 @media only screen and (max-width : 992px)
@@ -95,16 +95,10 @@
 		.good-cart
 			margin: 30px 0
 
-@media only screen and (max-width : 768px)
-	/**/
-
-
-
-@media only screen and (max-width : 576px)
-	/**/
-
-
-@media only screen and (max-width : 320px)
-	/**/
-
-
+	.good-cart-wrap	
+		margin: 0		
+		.owl-carousel 
+			.owl-nav 
+				button
+					&.owl-next, &.owl-prev
+						right: 0
