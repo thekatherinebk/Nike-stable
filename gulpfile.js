@@ -19,7 +19,6 @@ const replace = require('gulp-replace');
 const del = require('del');
 const plumber = require('gulp-plumber');
 const browserSync = require('browser-sync').create();
-
 const svgstore = require('gulp-svgstore');
 const svgmin = require('gulp-svgmin');
 const imagemin = require('gulp-imagemin');
@@ -53,21 +52,21 @@ function styles() {
           .pipe(gulp.dest(paths.build + 'fonts/'))
 }
 
-// function svgSprite() {
-//   return gulp.src(paths.src + 'svg/*.svg')
-//     .pipe(svgmin(function (file) {
-//       return {
-//         plugins: [{
-//           cleanupIDs: {
-//             minify: true
-//           }
-//         }]
-//       }
-//     }))
-//     .pipe(svgstore({ inlineSvg: true }))
-//     .pipe(rename('sprite-svg.svg'))
-//     .pipe(gulp.dest(paths.build + 'img/'));
-// }
+/*function svgSprite() {
+  return gulp.src(paths.src + 'img/svg/*.svg')
+    .pipe(svgmin(function (file) {
+      return {
+        plugins: [{
+          cleanupIDs: {
+            minify: false //turn to true 
+          }
+        }]
+      }
+    }))
+    .pipe(svgstore({ inlineSvg: true }))
+    .pipe(rename('sprite-svg.svg'))
+    .pipe(gulp.dest(paths.build + 'img/'));
+}*/
 
 function scripts() {
   return gulp.src(paths.src + 'js/*.js')
@@ -129,6 +128,7 @@ function watch() {
   gulp.watch(paths.src + 'sass/**/*', styles);
   gulp.watch(paths.src + 'js/*.js', scripts);
   gulp.watch(paths.src + 'templates/**/*.html', htmls);
+ // gulp.watch(paths.src + 'img/svg/*', svgSprite)
 }
 
 function serve() {
@@ -153,14 +153,14 @@ exports.watch = watch;
 gulp.task('build', gulp.series(
   clean,
   gulp.parallel(styles, fonts,
-    // svgSprite, 
+   // svgSprite, 
     scripts, scriptsVendors, htmls, images)
 ));
 
 gulp.task('default', gulp.series(
   clean,
   gulp.parallel(styles, fonts,
-  //  svgSprite, 
+ // svgSprite, 
   scripts, scriptsVendors, htmls, 
   images),
   gulp.parallel(watch, serve)
