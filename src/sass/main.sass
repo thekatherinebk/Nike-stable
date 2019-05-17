@@ -450,16 +450,26 @@ input[type="search"]::-webkit-search-results-decoration
 	&__wrap
 		flex-basis: 795px
 		flex-shrink: 4
-		max-width: 100%
-		//width: 60%
+		max-width: 60%
 		margin: 6.2vw 0 5.3vw
+		+m(576)
+			max-width: 100%
 
-	&-title
+	&__title
 		display: flex
 		align-items: center
 		margin-bottom: 3.76rem
 		white-space: nowrap
-	
+		+m(576)
+			flex-wrap: wrap
+			justify-content: space-around
+			text-align: center
+		.page-title
+			+m(768)
+				font-size: 30px
+			+m(576)
+				width: 100%
+				margin-bottom: 1rem
 
 	&__img
 		width: 37.5vw
@@ -472,11 +482,27 @@ input[type="search"]::-webkit-search-results-decoration
 		background-repeat: no-repeat
 		+m(1600)
 			right: -6vw
+		+m(768)
+			right: -3vw
+		+m(576)
+			top: 102px
+			right: 0
+			left: 0
+			margin: auto
+			width: auto
+			padding: 130px 0
 
-	&-text
+	&__text
 		padding: 0 1.53rem
 		border-left: 2px solid $accent
-		margin: 3.76rem 5.3vmax 3.76rem 2.66vmax
+		margin:
+			top: 3.76rem 
+			bottom: 3.76rem 
+			left: 2.66vmax
+		max-width:  585px
+		+m(576)
+			margin-top: 220px
+
 
 #main-home__page
 	background-color: $bgc
@@ -626,6 +652,11 @@ input[type="search"]::-webkit-search-results-decoration
 			margin:
 				top: 3rem
 				bottom: 0
+			+m(1200)
+				font-size: 1.5rem
+
+			+m(992)
+				font-size: 1rem
 
 .s
 	&-challenges
