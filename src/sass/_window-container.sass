@@ -8,6 +8,12 @@
 	max-width: 1920px
 	height: auto
 	background-color: rgba($light-grey, .5)
+	+m(992)
+		padding: get-rem(80px) 0px 0
+	&.padding-1
+		+m(992)	
+			padding: get-rem(80px) 0px 0
+
 
 .window
 	&-container
@@ -17,7 +23,6 @@
 		height: auto
 
 	&-menu
-		
 		&-sidebar
 			width: 0
 			position: absolute
@@ -28,6 +33,12 @@
 			height: 100%
 			@include transitionAll()
 			z-index: -1
+			+m(768)
+				padding: 6rem 40px 40px
+				text-align: center
+				position: fixed
+				z-index: -1
+				transform: translateX(-200px)
 			
 		&-content
 			max-width: 100%
@@ -37,6 +48,8 @@
 			padding-left: get-rem(77px)
 			@include transitionAll()
 			padding-left: 4.52941rem
+			+m(768)
+				padding-left: 45px
 
 		&-ham
 			display: block
@@ -49,21 +62,22 @@
 			width: get-rem(77px)
 			z-index: 5
 			@include transitionAll()
-
+			+m(768)
+				width: 45px
 			&__button
 				display: block
 				width: 50px
 				height: 34px
 				position: relative
 				margin: 20px auto
+				+m(768)
+					width: 40px
 				&:hover, &:focus
 					span
 						background-color: $accent
-
 				&:active
 					span
 						background-color: darken($accent, 20%)
-				
 				span
 					display: block
 					background-color: #000
@@ -73,6 +87,10 @@
 					height: 4px
 					position: absolute
 					left: 0
+					+m(768)
+						margin:
+							left: 5px
+							right: 5px
 					
 					&:nth-child(1)
 						top: 0
@@ -110,22 +128,24 @@
 				color: darken($accent, 20%)
 		
 		&.is-active
-			color: $accent
-			font-weight: 700
-			border-bottom-color: $accent
-			border-bottom-size: 2px
 			position: relative
+			color: $accent
+			font-weight: 600
+			border-bottom: 1px solid $accent
 
 .on-arrow
+	display: inline-block
 	position: absolute
 	top: 0
+	right: -50px
 	width: get-rem(52px)
 	height: get-rem(52px)
 	line-height: get-rem(52px)
 	background-color: $light-grey
 	border-radius: 10em
-	display: inline-block
-	right: -50px
+	+m(768)
+		color: $accent
+		right: -40px
 	&:hover, &:focus
 		background-color: $accent
 		.fas
@@ -140,69 +160,27 @@
 		width: 16.23rem
 		opacity: 1
 		z-index: 9
-		overflow: scroll
-
-	&-closed
-		width: 0
-		opacity: 0
-		z-index: -10
-
-.content
-	&-full
-		padding-left: 4.52941rem
-	&-small
-		padding-left: 16.23rem
-
-
-@media only screen and (max-width : 992px)
-	/**/
-	.page-content
-		padding: get-rem(80px) 0px 0
-		&.padding-1
-			padding: get-rem(80px) 0px 0
-			
-
-
-@media only screen and (max-width : 768px)
-	/**/
-	.window
-		
-		&-menu
-			&-ham
-				width: 45px
-				&__button 
-					width: 40px
-					span
-						margin:
-							left: 5px
-							right: 5px
-			&-sidebar
-				padding: 6rem 40px 40px
-				text-align: center
-				position: fixed
-				z-index: -1
-				transform: translateX(-200px)					
-
-			&-content
-				padding-left: 45px
-
-	.sidebar
-		&-opened
+		+m(768)
+			overflow-y: scroll
 			transform: translateX(0)
 			z-index: 20
 			width: 100vw
 			height: 100%
 			opacity: 1
-		&-closed
+	&-closed
+		width: 0
+		opacity: 0
+		z-index: -10
+		+m(768)
 			opacity: 1
 
-	.content
-		&-full
+.content
+	&-full
+		padding-left: 4.52941rem
+		+m(768)
 			padding-left: 45px	
-		&-small
-			padding-left: 45px
 
-	.on-arrow
-		color: $accent
-		right: -40px
-
+	&-small
+		padding-left: 16.23rem
+		+m(768)
+			padding-left: 45px	

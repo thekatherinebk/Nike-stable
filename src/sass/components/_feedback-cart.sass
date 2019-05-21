@@ -1,8 +1,6 @@
-
 .feedback-cart-wrap
 	margin: 0 auto
 	border-top: 1px solid $grey-text
-
 
 .accounts-home
 	.feedback-cart
@@ -14,29 +12,33 @@
 	border-radius: 10px
 	display: flex
 	background-color: rgba($light-grey, .5)
-
-
 	&__content
 		width: 56.56%
 		padding: 2em 2.53em 0.7em
 		display: flex
 		flex-wrap: wrap
 		justify-content: space-around
+		+m(1200)
+			width: 100%
+
 	&__img
 		background-repeat: no-repeat
 		background-size: cover
 		width: 43.44%
 		border-top-right-radius: 10px
 		border-bottom-right-radius: 10px
+		+m(1200)
+			display: none
 
 	&__composition
 		padding-top: 2.11em
-		//width: 67.9%
 		flex: 1	275px
 		margin-left: 5%
 		justify-content: space-between
 		display: flex
 		flex-wrap: wrap
+		+m(480)
+			margin-left: 0
 				
 	&__user-img
 		width: 8.1765em
@@ -48,7 +50,6 @@
 		color: #000
 		display: inline-flex
 
-
 	&__time
 		display: inline-flex
 		font-size: 1.176em
@@ -58,47 +59,8 @@
 		margin: 1.3em 0
 		font-size: 1em
 
-
 	&__btn
 
-
-
-@media only screen and (max-width : 1560px)
-	/**/
-			
-
-@media only screen and (max-width : 1200px)
-	/**/
-	.feedback-cart
-		&__content
-			width: 100%
-
-		&__img
-			display: none
-
-
-
-
-@media only screen and (max-width : 992px)
-	/**/
-
-
-
-@media only screen and (max-width : 768px)
-	/**/
-
-
-
-@media only screen and (max-width : 576px)
-	/**/
 	
-
-@media only screen and (max-width : 480px)
-	.feedback-cart
-		&__composition
-			margin-left: 0
-
-@media only screen and (max-width : 320px)
-	/**/
 
 	

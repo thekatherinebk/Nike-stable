@@ -1,13 +1,29 @@
-
-.padding-1
-	padding:
-		left: 7.14vmax
-		right: 7.14vmax
-
-.padding-2
-	padding:
-		left: 14.28vmax
-		right: 14.28vmax
+.padding
+	&-1
+		padding:
+			left: 7.14vmax
+			right: 7.14vmax
+		+m(1600)
+			padding: 
+				left: 4.2vmax
+				right: 4.2vmax
+	&-2
+		padding:
+			left: 14.28vmax
+			right: 14.28vmax
+		+m(1600)
+			padding:
+				left: 8.4vmax
+				right: 8.4vmax
+		+m(1200)
+			padding: 
+				left: 4.2vmax
+				right: 4.2vmax
+	&-1, &-2
+		+m(568)
+			padding: 
+				left: 3.5vw
+				right: 3.5vw
 
 .header
 	position: fixed
@@ -48,6 +64,8 @@
 				margin: 0 0 0 1rem
 	&__auth
 		display: flex
+		+m(1100)
+			display: none
 
 .auth
 	display: flex
@@ -64,20 +82,24 @@
 		width: 100%
 		height: auto
 
-
-	
 .just-it-btn
 	font-size: get-rem(20px)	
 	font-weight: 700
-	.fas
-		color: #000
 	&:last-child
 		padding: 0 2rem
 		margin-left: 1rem
+		+m(1200)
+			padding: 
+				left: 1rem
+				right: 1rem
+	
 
 .main-menu
 	display: flex
 	position: relative
+	+m(1100)
+		display: none
+
 	li
 		position: relative
 		padding: 1rem 1.76rem 
@@ -107,7 +129,6 @@
 			background-color: $light-grey
 			opacity: 0
 			transition: all .3s ease
-
 		a
 			transition: all .3s ease
 		&:hover
@@ -143,48 +164,3 @@
 		position: relative
 		&::placeholder
 			color: rgba($grey-text, .3)
-
-
-
-
-@media only screen and (max-width : 1600px)
-
-	.padding
-		&-1
-			padding: 
-				left: 4.2vmax
-				right: 4.2vmax
-
-		&-2
-			padding:
-				left: 8.4vmax
-				right: 8.4vmax
-			
-
-@media only screen and (max-width : 1200px)
-
-
-	.padding-2
-		padding: 
-			left: 4.2vmax
-			right: 4.2vmax
-
-	.just-it-btn
-		&:last-child
-			padding: 
-				left: 1rem
-				right: 1rem
-
-@media only screen and (max-width : 1100px)
-
-	.header__auth, .main-menu
-		display: none
-	
-
-@media only screen and (max-width : 568px)
-
-	.padding
-		&-1, &-2
-			padding: 
-				left: 3.5vw
-				right: 3.5vw
