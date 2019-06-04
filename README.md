@@ -1,2 +1,2 @@
 # Nike-stable
-Finished project
+Read bugs.docx
