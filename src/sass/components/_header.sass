@@ -105,17 +105,20 @@
 		padding: 1rem 1.76rem 
 		margin: 0	
 		transition: all .3s ease
+		
+
 		&::before
 			content: ''
 			position: absolute
 			bottom: 4px
 			height: 6px
-			width: 1.7rem
+			width: 0
 			background-color: $accent
 			opacity: 0
 			left: 0
 			right: 0
 			margin: 0 auto
+			transition: all .3s ease
 
 		&::after
 			position: absolute
@@ -135,9 +138,13 @@
 			transition: all .3s ease
 			a
 				color: #000
-				font-weight: 700
-			&::before, &::after
+				text-shadow: 1px 1px #000
+			&::after
 				opacity: 1
+
+			&::before
+				opacity: 1
+				width: 1.7rem
 				
 
 .search-form

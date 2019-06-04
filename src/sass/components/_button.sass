@@ -67,8 +67,6 @@ button
 	width: 100%	
 
 
-
-	
 .btn
 	@extend %btn-base
 	width: 9vw
@@ -169,7 +167,7 @@ button
 	
 	&.square 
 		border: 2px solid $accent
-		border-radius: 5px
+		border-radius: 10px
 		color: $accent
 		background-color: inherit
 		width: 100%
@@ -185,6 +183,11 @@ button
 			color: #fff
 			background-color: darken($accent, 5%)
 			outline: none
+		+m(1560)
+			font-size: 1.29rem
+		+m(992)
+			height: $square-height-mid
+			line-height: $square-height-mid
 		&.overlay
 			color: #fff
 			background-color: $accent
@@ -212,7 +215,12 @@ button
 			background-color: #EF4B39
 		&:nth-child(3)
 			background-color: #00A4E4
-
+		+m(1560)
+			font-size: 1.29rem
+			width: 30%
+		+m(992)
+			height: $square-height-mid
+			line-height: $square-height-mid
 		.fab
 			margin-right: 15px
 
@@ -224,7 +232,12 @@ button
 			outline: none
 
 	
-
+a.button.square
+	line-height: 4.05882rem
+	+m(1560)
+		padding-top: 0
+	+m(992)
+		line-height: $square-height-mid
 
 .social-btn-composition
 	display: flex
@@ -239,17 +252,3 @@ button
 		padding: 1.24rem 2.058rem
 		line-height: 1
 		transition: all .2s ease
-
-
-
-
-@media only screen and (max-width : 1560px)
-	/**/
-
-@media only screen and (max-width : 1200px)
-	/**/
-@media only screen and (max-width : 992px)
-	/**/
-@media only screen and (max-width : 576px) 
-	/**/
-

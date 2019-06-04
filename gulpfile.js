@@ -32,7 +32,7 @@ const paths =  {
 };
 
 function styles() {
-  return gulp.src([paths.src + 'sass/main.sass']) //, paths.src + 'sass/style.css'
+  return gulp.src([paths.src + 'sass/app.sass']) //, paths.src + 'sass/style.css'
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(sassGlob())

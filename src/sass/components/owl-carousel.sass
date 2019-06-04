@@ -1,0 +1,45 @@
+.owl-carousel 
+	.owl-item 
+		backface-visibility: inherit
+		margin: auto
+		.active
+
+		.good-cart
+			margin: -42px auto 42px
+
+	.owl-stage
+		display: flex
+		
+	.owl-nav
+		height: 0
+		top: 0
+		button
+			&.owl-next, &.owl-prev
+				background-color: #fff
+				width: get-rem(47px)
+				height: get-rem(47px)
+				color: #000
+				line-height: get-rem(47px)
+				border-radius: 10em
+				position: absolute
+				top: 247px
+				right: -100px
+				z-index: 10
+				transition: all .3s ease
+				&:active, &:hover
+					background-color: $accent
+					color: #fff
+
+			&.owl-prev
+				display: none
+			&.owl-next
+				+m(1560)
+					top: 223px
+					right: -79px
+				+m(992)
+					right: -33px
+				+m(576)
+					right: 0
+					width: 35px
+					height: 35px
+					line-height: 35px

@@ -1,0 +1,55 @@
+
+.news
+	&-s
+		padding-bottom: 9.06vmax
+	&-items
+		display: flex
+		justify-content: space-between
+		align-items: center
+		
+	&-item
+		position: relative
+		flex-basis: 30% 
+		max-width: 370px
+		text-align: center
+		justify-content: space-between
+		+m(768)
+			margin-bottom: 50px
+
+		&__video
+			margin-bottom: 4rem	
+			box-shadow: 0 0 15px grey
+			
+		&__cross
+			position: absolute
+			z-index: 5
+			top: 36%
+			left: 0
+			width: 100%	
+			height: auto	
+
+		&__footwear
+			padding: 15% 0
+			background-position: center
+			background-repeat: no-repeat
+			background-size: contain
+			&:before
+				content: ''
+				border-radius: 25rem
+				border: 5px solid #fff
+				position: absolute
+				z-index: -1
+				top: 6%
+				bottom: -8%
+				right: 34.5%
+				left: 34.5%				
+
+		&__title
+			font-weight: 700
+			color: #000
+			text-align: center
+			margin: 0 auto
+			display: inline-block
+			padding: .588rem 2rem
+			background-color: #fff
+			border-radius: 10rem

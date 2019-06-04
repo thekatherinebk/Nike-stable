@@ -18,7 +18,7 @@
 
 	.h2	
 		text-align: center
-		margin: 54px 0 47px
+		margin: get-vw(54px) 0 get-vw(41px)
 
 
 	.wrap
@@ -40,14 +40,18 @@
 			padding-top: 6px
 			display: inline-block
 
-.line-p
+
+	.line-p
 		display: flex
 		align-items: center
 		white-space: nowrap
 		margin: 33px 0
 		color: #000
-		font-size: 20px
-
+		font-size: get-rem(20px)
+		font-weight: 600
+		+m(992)
+			font-size: get-rem(14px)
+			margin: 20px 0
 		&::before, &::after
 			content: ""
 			height: 1px
@@ -63,6 +67,8 @@
 
 .ftr__log-in.copyright
 	margin: 44px 0 34px
+	+m(1560)
+		font-size: 14px
 
 .text-on-img
 	position: absolute
@@ -70,7 +76,11 @@
 	top: 790px
 	left: 93px
 	color: #fff
-	font-size: 17px
+	font-size: 1rem
+	+m(1560)
+		top: 540px
+		width: 320px
+		left: 43px
 	.h6
 		font-size: 20px
 		font-weight: 700

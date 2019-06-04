@@ -1,82 +1,14 @@
-@import "vars"
-@import "mixins"
+@import "helpers/_vars"
+
 /*==========  Desktop First  ==========*/
 
 @media only screen and (max-width : 1560px)
 	// header 
-	html
-		font-size: 14px
 
-	body
-		font-size: 14px
 	.container-not-auth
 		padding: 0 7.2%
-		
-
-	// footer
-	.container-xl-offset-1
-		padding:
-			left: 7.2%
-			right: 7.2%
-	.main-footer
-		font-size: 14px
-		.footer
-			&__menu
-				.upcs
-					font-size: 15px
-
-			&__logo
-				font-size: 17px
-				top: 26px
-			&__content-menu
-				font-size: 16px
-				li
-					margin: 0 8px
-		.copyright
-			font-size: 14px
-
-	// footer end
-
-	//log-in page
-
-	.button
-		
-		&.square, &-soc
-			height: 60px
-			font-size: 18px
-			line-height: 60px
-		&-soc
-			width: 30%
-
-	a.button.square
-		padding-top: 0	
 
 
-	.ftr__log-in.copyright
-		font-size: 14px
-		
-
-	//end of log-in page
-
-	// owl-carousel
-
-	.owl-carousel 
-		.owl-nav
-			button
-				&.owl-next
-					top: 223px
-					right: -79px
-
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-
-	// log-in
-	.text-on-img
-		top: 540px
-		width: 320px
-		font-size: 14px
-		left: 43px
-	
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/*header*/
@@ -89,40 +21,6 @@
 			right: -6vmax
 
 
-	/*footer*/
-	.main-footer
-		.footer
-			&__top
-				&.container-lg-offset-1
-					padding: 
-						left: 14.4%
-						right: 14.4%
-
-			&__logo, &__content, &__networks
-				margin-bottom: 40px	
-				text-align: center
-				
-			&__networks
-				order: 2
-
-			&__logo, &__networks
-				width: 50%
-
-			&__content
-				order: 3
-				width: 100%
-				padding: 0
-			
-	// log-in page 
-	.button
-		
-		&.square, &-soc
-			height: 50px
-			font-size: 15px
-			line-height: 50px
-
-	
-
 	.form-window
 		padding-left: 7.2%
 		.left
@@ -131,9 +29,6 @@
 		.h2
 			font-size: 40px
 			margin: 35px 0
-		.line-p
-			margin: 20px 0
-			font-size: 15px
 
 		.wrap
 			font-size: 14px
@@ -144,20 +39,9 @@
 			a
 				font-size: 14px
 				vertical-align: bottom
-		.square-input, .selectize-control
-			margin-bottom: 20px
 
-		.selectize-input > input
-				font-size: 15px
 		.text-on-img
 			width: 300px
-
-	.owl-carousel 
-		.owl-nav
-			button
-
-				&.owl-next
-					right: -33px
 
 
 /* Small Devices, Tablets */
@@ -168,19 +52,6 @@
 	.news-items
 		flex-direction: column
 
-
-	.main-footer
-		.footer
-			&__top
-				justify-content: space-around
-				&.container-lg-offset-1
-					padding: 
-						left: 7.2%
-						right: 7.2%
-			&__menu
-				padding: 0 20px
-
-			&__bottom
 	
 	// log-in page 
 	.form-window
@@ -199,38 +70,12 @@
 	.cta-btn
 		.far, .fas
 			font-size: 20px
-
-	.page-title
-    	font-size: 22px
     
 	.new-nike-text
 		margin-right: 0
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 576px)
-
-	.main-footer
-		.footer
-			&__top
-			&__menu
-				margin-top: 20px
-
-				&:nth-child(1)
-					text-align: center
-					width: 100%
-					margin-top: 0
-
-
-			&__logo, &__networks
-				width: 100%
-
-			&__logo
-				justify-content: center
-				.img-responsive
-					margin-left: -12px
-
-			&__content-menu
-				font-size: 14px
 	// end of FOOTER
 	.form-window
 		.left
@@ -241,17 +86,5 @@
 		.h2
 			margin: 20px 0
 
-	.owl-carousel 
-		.owl-nav
-			button
-				&.owl-next
-					right: 0
-					width: 35px
-					height: 35px
-					line-height: 35px
 
 
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
-	

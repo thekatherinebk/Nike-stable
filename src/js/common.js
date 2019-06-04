@@ -35,8 +35,10 @@
     //connected library selectize
 
     $('select').selectize({
+
     });
 
+// Selectize.defaults.scrollDuration = 3000; 
 
     //owl carousel apllied
 

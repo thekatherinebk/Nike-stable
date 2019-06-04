@@ -1,0 +1,82 @@
+.square-input, select, 
+.selectize-input, .selectize-input.input-active
+	border-radius: 10px
+	border: 2px solid rgba(#707070, .75)
+	padding: 0 28px
+	line-height: $square-height
+	height: $square-height
+	cursor: pointer
+	width: 100%
+	outline: none
+	color: inherit
+	font: 400 1.1rem $default-font, sans-serif
+	transition: all .4s ease
+	+m(992)
+		height: $square-height-mid
+		line-height: $square-height-mid
+	
+	option
+		cursor: pointer
+
+	&:focus
+		border-color: $accent
+		color: #000
+		&::placeholder
+			color: #000
+
+.square-input, select, .selectize-control
+	margin-bottom: 2.35rem	
+	+m(992)
+		margin-bottom: 20px
+.selectize-control.single .selectize-input, .selectize-control.single .selectize-input 
+	input
+		line-height: $square-height !important
+		+m(992)
+			line-height: $square-height-mid !important
+		&::placeholder-shown
+			margin: auto
+			line-height: $square-height
+
+.selectize-control, .selectize-input
+	text-align: left
+	box-shadow: none
+	transition: all .1s ease
+	input
+		font-size: 1.1rem
+		line-height: $square-height
+	.item
+		height: 100%
+		line-height: $square-height 
+		+m(992)
+			line-height: $square-height-mid
+
+	&.input-active
+		border-color: $accent
+		color: #000
+		
+	&.dropdown-active
+		border-bottom-right-radius: 0
+		border-bottom-left-radius: 0
+		border-bottom: 0
+
+	&.selectize-dropdown.single.dropdown-menu
+		top: -40px
+
+	&.focus
+		box-shadow: none
+	
+	.option
+		padding: 22px 28px
+		font-size: 1rem
+		line-height: 1
+
+		.active
+			background-color: lighten($accent, 45%)
+
+		
+.selectize-control .option.active, .selectize-input .option.active
+	background-color: lighten($accent, 45%)
+
+.selectize-dropdown-content
+	border: 1px solid $accent
+	border-top: 0
