@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42.309" height="29.033" viewBox="0 0 42.309 29.033">
+  <g id="Group_747" data-name="Group 747" transform="translate(-428 -40)">
+    <g id="shopping-cart" transform="translate(443 22.666)">
+      <g id="Group_40" data-name="Group 40" transform="translate(0 21.334)">
+        <g id="Group_39" data-name="Group 39">
+          <path id="Path_17" data-name="Path 17" d="M27.195,24.975a.591.591,0,0,0-.455-.228H5.12l-.569-2.958c0-.228-.341-.455-.569-.455H.569a.569.569,0,0,0,0,1.138H3.527L6.258,36.354a4.009,4.009,0,0,0,3.869,3.186H23.212a.569.569,0,0,0,0-1.138H10.241A2.623,2.623,0,0,1,7.965,37.15l16.613-2.276a.489.489,0,0,0,.455-.455l2.276-9.1A.562.562,0,0,0,27.195,24.975ZM24.009,33.85,7.4,36.012,5.348,25.772h20.6Z" transform="translate(0 -21.334)"/>
+        </g>
+      </g>
+      <g id="Group_42" data-name="Group 42" transform="translate(6.827 40.678)">
+        <g id="Group_41" data-name="Group 41">
+          <path id="Path_18" data-name="Path 18" d="M130.845,384a2.845,2.845,0,1,0,2.845,2.845A2.817,2.817,0,0,0,130.845,384Zm0,4.551a1.707,1.707,0,1,1,1.707-1.707A1.75,1.75,0,0,1,130.845,388.551Z" transform="translate(-128 -384)"/>
+        </g>
+      </g>
+      <g id="Group_44" data-name="Group 44" transform="translate(18.206 40.678)">
+        <g id="Group_43" data-name="Group 43">
+          <path id="Path_19" data-name="Path 19" d="M344.179,384a2.845,2.845,0,1,0,2.845,2.845A2.817,2.817,0,0,0,344.179,384Zm0,4.551a1.707,1.707,0,1,1,1.707-1.707A1.75,1.75,0,0,1,344.179,388.551Z" transform="translate(-341.334 -384)"/>
+        </g>
+      </g>
+    </g>
+    <text id="_2" data-name="2" transform="translate(428 60)" font-size="15" font-family="Cairo-Bold, Cairo" font-weight="700"><tspan x="0" y="0">2</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26.817" height="28.998" viewBox="0 0 26.817 28.998">
+  <g id="notification" transform="translate(0.553 0.5)" opacity="0.5">
+    <ellipse id="Ellipse_61" data-name="Ellipse 61" cx="3.145" cy="3.145" rx="3.145" ry="3.145" transform="translate(9.71 21.708)" fill="none" stroke="#000" stroke-width="1"/>
+    <path id="Union_52" data-name="Union 52" d="M.032,22.424H.05A2.6,2.6,0,0,1,0,21.919a2.55,2.55,0,0,1,2.549-2.55h.036a2,2,0,0,0,1.441-1.923V12.336A8.832,8.832,0,0,1,10.7,3.773a2.5,2.5,0,1,1,4.319,0,8.832,8.832,0,0,1,6.671,8.563v5.109a2,2,0,0,0,1.44,1.923h.036a2.551,2.551,0,0,1,2.5,3.056h.02a2.368,2.368,0,0,1-2.307,2.042c-.034,0-.069,0-.1,0l-.106,0H2.549l-.107,0-.1,0A2.367,2.367,0,0,1,.032,22.424Z" transform="translate(0 0)" fill="#fff" stroke="#000" stroke-width="1"/>
+    <path id="Union_50" data-name="Union 50" d="M23.268,5.1l-.107,0H2.548l-.107,0A2.362,2.362,0,0,1,.032,3.056H.05A2.551,2.551,0,0,1,2.548,0H23.161a2.553,2.553,0,0,1,2.5,3.056h.019A2.368,2.368,0,0,1,23.372,5.1Z" transform="translate(0 19.369)" fill="#fff" stroke="#000" stroke-width="1"/>
+  </g>
+</svg>

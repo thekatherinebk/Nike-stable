@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40.463" height="37.091" viewBox="0 0 40.463 37.091">
+  <g id="Group_92" data-name="Group 92" transform="translate(-1460 -2087)">
+    <g id="shopping-cart" transform="translate(1460 2087)">
+      <g id="Group_40" data-name="Group 40" transform="translate(0 0)">
+        <g id="Group_39" data-name="Group 39">
+          <path id="Path_17" data-name="Path 17" d="M40.294,26.729a.876.876,0,0,0-.674-.337H7.587l-.843-4.383c0-.337-.506-.674-.843-.674H.843a.843.843,0,0,0,0,1.686H5.227L9.273,43.589a5.94,5.94,0,0,0,5.732,4.721H34.393a.843.843,0,1,0,0-1.686H15.174A3.887,3.887,0,0,1,11.8,44.769L36.417,41.4a.725.725,0,0,0,.674-.674l3.372-13.488A.832.832,0,0,0,40.294,26.729Zm-4.721,13.15-24.615,3.2L7.924,27.909H38.44Z" transform="translate(0 -21.334)"/>
+        </g>
+      </g>
+      <g id="Group_42" data-name="Group 42" transform="translate(10.116 28.661)">
+        <g id="Group_41" data-name="Group 41">
+          <path id="Path_18" data-name="Path 18" d="M132.215,384a4.215,4.215,0,1,0,4.215,4.215A4.174,4.174,0,0,0,132.215,384Zm0,6.744a2.529,2.529,0,1,1,2.529-2.529A2.593,2.593,0,0,1,132.215,390.744Z" transform="translate(-128 -384)"/>
+        </g>
+      </g>
+      <g id="Group_44" data-name="Group 44" transform="translate(26.975 28.661)">
+        <g id="Group_43" data-name="Group 43">
+          <path id="Path_19" data-name="Path 19" d="M345.549,384a4.215,4.215,0,1,0,4.215,4.215A4.174,4.174,0,0,0,345.549,384Zm0,6.744a2.529,2.529,0,1,1,2.529-2.529A2.593,2.593,0,0,1,345.549,390.744Z" transform="translate(-341.334 -384)"/>
+        </g>
+      </g>
+    </g>
+    <path id="Union_23" data-name="Union 23" d="M3.864,3.864h0v0h0v0Z" transform="translate(1479.067 2096.336)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

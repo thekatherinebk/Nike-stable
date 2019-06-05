@@ -1,0 +1,404 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Accounts Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+<body id=accounts__page >
+	
+	
+
+	<header class="header header-authd padding-1">
+	
+	<div class="header-container">
+		
+		<div class="header-item">
+
+			<div class="header-item__content">
+				
+				<div class="logo">
+					<a href="../index.html" class="logo__link">
+						<svg class="icon icon-logo">
+							<use xlink:href="img/svg/sprite.svg#nike" />
+						</svg>
+					</a>
+				</div>
+				
+			</div>
+			
+			<div class="header-item__content">
+				<div class="header__auth">
+					<div class="auth">
+						<button class="header-auth__btn btn-transp btn-pad fa"> 2 <i class="fas fa-shopping-cart"></i></button>
+						<form class="search-form" action="#" method="post">
+							<i class="fas fa-search"></i>
+							<input id="search-form__field" class="search-form__field" type="text" placeholder="Search for something ...">
+						</form>
+					</div>
+				
+				</div>
+				
+
+			</div>
+
+		</div>
+
+
+		<div class="header-item">
+
+			
+
+			<div class="header-item__content">
+
+				<div class="user-nav">
+
+					<div class="user-nav__item">
+						<a href="#" class="user-nav__link"><i class="fas fa-envelope-open-text"></i>Messages</a>
+					</div>
+
+					<div class="user-nav__item">
+						<a href="#" class="user-nav__link"><i class="far fa-bell"></i>Notifications</a>
+					</div>
+
+					<div class="user-nav__item">
+						<a href="#" class="user-nav__link"><i class="fas fa-question"></i></a>
+					</div>
+
+					<div class="user-nav__item">
+						<button class="user-nav-profile menu-trigger">
+							<img class="user-nav-profile__img img-responsive " src="../img/user.png" alt="icon">
+							<span class="user-nav-profile__name">Saad M.</span>
+							<i class="fas fa-angle-down"></i>
+						</button>
+					</div>
+
+
+					<div class="mobile-menu">
+						<div class="mobile-menu__container">
+							<div class="mobile-menu__content">
+								<ul class="mobile-menu__nav">
+
+									<li class="menu-trigger">
+										<img class="img-responsive " src="../img/user.png" alt="icon">
+									</li>
+
+									<li class="menu-trigger" >
+										Saad M.
+										<i class="fas fa-angle-up"></i>
+									</li>
+
+									<li>
+										<a href="#" class="user-nav__link"><i class="fas fa-envelope-open-text"></i>  Messages</a>
+									</li>
+
+									<li>
+										<a href="#" class="user-nav__link"><i class="far fa-bell"></i>  Notifications</a>
+									</li>
+									
+								</ul>
+							</div>
+							<div class="mobile-menu__footer">
+								<button class="header-auth__btn btn-transp btn-pad fa"> 2 <i class="fas fa-shopping-cart"></i></button>
+								<a href="#" class="user-nav__link"><i class="fas fa-question"></i></a>
+								
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+
+			</div>
+			
+			<div class="header-item__content">
+
+				<a href="#" class="just-it-btn btn-pad btn-grey">
+					<svg class="icon-item">
+						<use xlink:href="img/svg/sprite.svg#worldwide" />
+					</svg>
+				</a>
+				<a href="#" class="just-it-btn  btn-pad btn-accent">Just Eat it!</a>
+
+			</div>
+		</div>
+
+
+	</div>
+	
+	
+</header>
+
+
+	
+	<main class="page-content padding-1">
+		<div class="window-container">
+
+			<aside class="window-menu-sidebar" id="sidebar">
+
+				<nav class="menu-sidebar">
+				
+					<ul>
+						<li class="menu-sidebar__item is-active"><a href="accounts-home.html">Home</a></li>
+						<li class="menu-sidebar__item  "><a href="offer-page.html">Offers</a></li>
+						<li class="menu-sidebar__item  "><a href="news.html">News</a></li>
+						<li class="menu-sidebar__item  "><a href="offers1.html">Challenges</a></li>
+						<li class="menu-sidebar__item  "><a href="achievements.html">Achievements</a></li>
+						<li class="menu-sidebar__item  "><a href="history.html">History</a></li>
+						<li class="menu-sidebar__item  "><a href="feedback.html">Feedback</a></li>
+						<li class="menu-sidebar__item  "><a href="profile.html">Settings</a></li>
+					</ul> 
+						
+				</nav> 
+
+			</aside>
+			<section class="window-menu-content">
+				<div class="window-menu-ham" onclick="openSidebar()">
+					<button class="window-menu-ham__button ">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+				
+				<div class="window-content">
+					<div class="block-content">
+					
+
+	<section class="accounts-home">
+
+
+		
+				<div class="good-cart-wrap">
+			<div class="owl-carousel good-cart-carousel">
+
+				<div class="good-cart"> 
+	<img class=" good-cart__img img-responsive" src="../img/items/good1.png" alt="Nike Air Max">
+	<div class="good-cart__bgc"><p class="good-cart__title">Nike Air Max <br><span class="good-cart__br">Package</span></p>	
+		<div class="good-cart__line">
+			<button class="good-cart__basket"><i class="fas fa-cart-plus"></i></button>
+			<div class="rating">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="far fa-star"></i>
+			</div>
+		</div>
+		<button class="good-cart__button btn-wide">Eat Now!</button>
+	</div>
+</div>
+
+				<div class="good-cart"> 
+					<img class=" good-cart__img img-responsive" src="../img/items/good2.png" alt="Nike Air Max">
+					<div class="good-cart__bgc"><p class="good-cart__title">Nike Zoom Running Package</p>	
+						<div class="good-cart__line">
+							<button class="good-cart__basket"><i class="fas fa-cart-plus"></i></button>
+							<div class="rating">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+							</div>
+						</div>
+						<button class="good-cart__button btn-wide">Eat Now!</button>
+					</div>
+				</div>
+
+				<div class="good-cart"> 
+	<img class=" good-cart__img img-responsive" src="../img/items/good1.png" alt="Nike Air Max">
+	<div class="good-cart__bgc"><p class="good-cart__title">Nike Air Max <br><span class="good-cart__br">Package</span></p>	
+		<div class="good-cart__line">
+			<button class="good-cart__basket"><i class="fas fa-cart-plus"></i></button>
+			<div class="rating">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="far fa-star"></i>
+			</div>
+		</div>
+		<button class="good-cart__button btn-wide">Eat Now!</button>
+	</div>
+</div>
+
+				<div class="good-cart"> 
+					<img class=" good-cart__img img-responsive" src="../img/items/good2.png" alt="Nike Air Max">
+					<div class="good-cart__bgc"><p class="good-cart__title">Nike Zoom Running Package</p>	
+						<div class="good-cart__line">
+							<button class="good-cart__basket"><i class="fas fa-cart-plus"></i></button>
+							<div class="rating">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+							</div>
+						</div>
+						<button class="good-cart__button btn-wide">Eat Now!</button>
+					</div>
+				</div>
+				<div class="good-cart"> 
+	<img class=" good-cart__img img-responsive" src="../img/items/good1.png" alt="Nike Air Max">
+	<div class="good-cart__bgc"><p class="good-cart__title">Nike Air Max <br><span class="good-cart__br">Package</span></p>	
+		<div class="good-cart__line">
+			<button class="good-cart__basket"><i class="fas fa-cart-plus"></i></button>
+			<div class="rating">
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="far fa-star"></i>
+			</div>
+		</div>
+		<button class="good-cart__button btn-wide">Eat Now!</button>
+	</div>
+</div>
+			</div>	
+		</div>
+
+
+
+		<div class="feedback-cart-wrap">
+
+			<div class="feedback-cart">
+	<div class="feedback-cart__content"><!-- 
+	 --><div class="feedback-cart__user-img"><img class="img-responsive" src="../img/items/user1.png" alt="user"></div>
+		<div class="feedback-cart__composition">
+			<div class="feedback-cart__user-name">User 2001</div>
+			<div class="feedback-cart__time">24 min ago</div>
+			<div class="feedback-cart__text">
+				It's Nike your favorite sport brand ever! Now we make a new field for our users. Why? Because we think that we want to help you more in your life. So, we choose the healthy food field for you to be the super feature in your next life.
+			</div>
+			<button class="feedback-cart__btn rating-hand-btn btn-grey"><i class="fas fa-thumbs-up"></i></button>
+			<button class="feedback-cart__btn rating-hand-btn btn-grey"><i class="fas fa-thumbs-down"></i></button>
+		</div>
+	</div>
+	<div class="feedback-cart__img" style="background-image: url(../img/items/meal1.png);"></div>
+</div>		
+
+			<div class="feedback-cart">
+				<div class="feedback-cart__content"><!-- 
+				 --><div class="feedback-cart__user-img"><img class="img-responsive" src="../img/items/user2.png" alt="user"></div>
+					<div class="feedback-cart__composition">
+						<div class="feedback-cart__user-name">User 2001</div>
+						<div class="feedback-cart__time">24 min ago</div>
+						<div class="feedback-cart__text">
+							It's Nike your favorite sport brand ever! Now we make a new field for our users. Why? Because we think that we want to help you more in your life. So, we choose the healthy food field for you to be the super feature in your next life.
+						</div>
+						<button class="feedback-cart__btn rating-hand-btn btn-grey"><i class="fas fa-thumbs-up"></i></button>
+						<button class="feedback-cart__btn rating-hand-btn btn-grey"><i class="fas fa-thumbs-down"></i></button>
+					</div>
+				</div>
+				<div class="feedback-cart__img" style="background-image: url(../img/items/meal2.png);"></div>
+			</div>			
+			<div class="feedback-cart">
+				<div class="feedback-cart__content"><!-- 
+				 --><div class="feedback-cart__user-img"><img class="img-responsive" src="../img/items/user3.png" alt="user"></div>
+					<div class="feedback-cart__composition">
+						<div class="feedback-cart__user-name">User 2001</div>
+						<div class="feedback-cart__time">24 min ago</div>
+						<div class="feedback-cart__text">
+							It's Nike your favorite sport brand ever! Now we make a new field for our users. Why? Because we think that we want to help you more in your life. So, we choose the healthy food field for you to be the super feature in your next life.
+						</div>
+						<button class="feedback-cart__btn rating-hand-btn btn-grey"><i class="fas fa-thumbs-up"></i></button>
+						<button class="feedback-cart__btn rating-hand-btn btn-grey"><i class="fas fa-thumbs-down"></i></button>
+					</div>
+				</div>
+				<div class="feedback-cart__img" style="background-image: url(../img/items/meal3.png);"></div>
+			</div>		
+
+		</div>	
+		<div class="see-more-button button">See more   <i class="fas fa-arrow-down"></i></div>
+		
+	</section>
+
+
+
+					</div>
+				</div>
+
+
+			</section>
+
+		</div>
+	</main>
+
+	
+
+	<footer class="main-footer">
+		<div class="footer__top container-xl-offset-2 container-lg-offset-1 container-xs ">
+			<div class="footer__menu">
+				<nav>
+					<ul class="upcs">
+						<li><a href="#">Find a restaurant</a></li>
+						<li><a href="#">Log in for email</a></li>
+						<li><a href="#">Sign in for email</a></li>
+						<li><a href="#">Site feedback</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="footer__menu">
+				<nav>
+					<ul>
+						<li class="upcs"><a href="#">Get Help</a></li>
+						<li><a href="#">Order Status</a></li>
+						<li><a href="#">Delivery</a></li>
+						<li><a href="#">Returns</a></li>
+						<li><a href="#">Payment Options</a></li>
+						<li><a href="#">Contact US</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="footer__menu">
+				<nav>
+					<ul>
+						<li class="upcs"><a href="#">About Nike</a></li>
+						<li><a href="#">News</a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">Investors</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="footer__bottom container-xl-offset-1">
+			<div class="footer__logo">
+				<div class="img-responsive"><img src="../img/nike2.png" alt="Nike"></div>
+				<p> Just Eat It!</p>
+			</div>
+			<div class="footer__content">
+				<nav class="footer__content-menu">
+					<ul>
+						<li><a href="#">Guides</a></li>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Terms of Sales </a></li>
+						<li><a href="#">Privacy Policy</a></li>
+					</ul>
+				</nav>
+				<div class="copyright">&copy; 2018 Saad Muhamed, All Rights Reserved</div>
+			</div>
+			<div class="footer__networks">
+				<nav>
+					<ul>
+						<li><a  class="net__item" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+						<li><a class="net__item"  href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li><a  class="net__item" href="#"><i class="fab fa-twitter"></i></a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+</footer>
+
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="js/vendors.min.js"></script>
+	<script src="js/script.min.js"></script>
+</body>
+</html>
