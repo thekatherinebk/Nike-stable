@@ -81,8 +81,6 @@ function scripts() {
 
 function scriptsVendors() {
   return gulp.src([
-      'src/libs/jquery/dist/jquery.min.js',
-      // 'src/libs/mmenu/js/jquery.mmenu.all.min.js',
       'src/libs/owl.carousel/owl.carousel.min.js',
       'src/libs/owl.carousel2.thumbs/dist/owl.carousel2.thumbs.min.js',
       'src/libs/fotorama/fotorama.js',
