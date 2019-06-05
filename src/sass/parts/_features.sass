@@ -1,14 +1,18 @@
-.features-main-s
+.features
+	&-section
 
-	padding: 
-		top: 12.9vw
-		bottom:  18.9vw
-	.bg-img
-		position: absolute
-		top: -11.06vw 
-		right: -14.48vw
-		left: -14.48vw
-		bottom: -11.06vw
+		padding: 
+			top: 12.9vw
+			bottom:  18.9vw
+		margin: -16% -14.28vw
+		background-size: cover
+		background-position: center
+		+m(1600)
+			margin-top: -14%
+		+m(1200)
+			margin-top: -12%
+	&-container
+		padding: 20%  14.28vw
 		
 	.owl-carousel
 		.owl-item
@@ -19,7 +23,6 @@
 
 		&-carousel
 			color: #fff
-			font-size: 1.765rem
 
 			.owl-dots
 				width: 100%
@@ -28,15 +31,16 @@
 				text-align: center
 
 				button.owl-dot
-					width: 11px
-					height: 11px
+					width: get-rem(11px)
+					height: get-rem(11px)
 					background-color: $grey-text
 					margin: 5px
 					transition: all .4s ease 
 					border-radius: 1rem
+					cursor: pointer 
 					&.active
 						background-color: #fff
-						width: 38px
+						width: get-rem(38px)
 
 				
 		&-item
@@ -48,8 +52,7 @@
 			margin:
 				top: 3rem
 				bottom: 0
+			font-size: get-rem(30px)
 			+m(1200)
-				font-size: 1.5rem
+				font-size: get-rem(20px)
 
-			+m(992)
-				font-size: 1rem
