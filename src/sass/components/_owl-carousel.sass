@@ -25,11 +25,17 @@
 				top: 247px
 				right: -100px
 				z-index: 10
-				transition: all .3s ease
+				+min(1024)
+					transition: all .3s ease
+
 				&:active, &:hover
+					+min(1024)
+						background-color: $accent
+						color: #fff
+				&:active	
 					background-color: $accent
 					color: #fff
-
+				
 			&.owl-prev
 				display: none
 			&.owl-next

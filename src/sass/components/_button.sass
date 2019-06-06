@@ -21,7 +21,9 @@ button
 	height: 2.53rem
 	font-size: .88rem
 	font-family: $default-font
-	transition: all .4s ease
+	transition: all .2s ease
+	+m(1024)
+		transition: all .4s ease
 
 .btn-pad
 	@extend %btn
@@ -51,12 +53,16 @@ button
 	font-weight: 700
 	font-size: 1.17em
 	font-family: $default-font
-	transition: all .4s ease
+	transition: all .2s ease
+	+min(1024)	
+		transition: all .4s ease
 	&:focus, &:hover
-		text-decoration: none
-		color: #fff
+		+min(1024)
+			text-decoration: none
+			color: #fff
 	&:hover
-		background-color: lighten($accent, 20%)
+		+min(1024)
+			background-color: lighten($accent, 20%)
 		
 	&:active
 		background-color: darken($accent, 20%)
@@ -72,8 +78,6 @@ button
 	width: 9vw
 	min-width: 90px
 
-	//was 85
-	
 	//to do: refactor code to delete (.button.grey)
 	&-accent
 		color: #fff
@@ -99,31 +103,46 @@ button
 		color: #000
 		background-color: none
 		&:focus, &:hover
-			text-decoration: none
-			color: #fff
+			+min(1024)
+				text-decoration: none
+				color: #fff
 		&:hover
-			background-color: lighten($accent, 5%)
+			+min(1024)
+				background-color: lighten($accent, 5%)
 			
 		&:active
+			color: #fff
 			background-color: darken($accent, 5%)
 			outline: none
 
 	&-grey 
 		background-color: $light-grey
-		transition: all .4s ease
-		&:focus, &:hover, &:active
+		transition: all .2s ease
+
+		+min(1024)
+			transition: all .4s ease
+		&:focus, &:hover
+			+min(1024)
+				text-decoration: none
+				color: #fff
+				.fas
+					color: #fff
+				.icon, .icon-item
+					fill: #fff
+		&:hover
+			+min(1024)
+				background-color: lighten($accent, 10%)
+			
+		&:active
 			text-decoration: none
 			color: #fff
+			background-color: darken($accent, 12%)
+			outline: none
 			.fas
 				color: #fff
 			.icon, .icon-item
 				fill: #fff
-		&:hover
-			background-color: lighten($accent, 10%)
 			
-		&:active
-			background-color: darken($accent, 10%)
-			outline: none
 
 .button
 	display: inline-block
@@ -137,12 +156,16 @@ button
 	border-radius: 10em
 	text-align: center
 	position: relative
-	transition: background-color .3s ease
 	cursor: pointer
 	outline: none
 	line-height: 1.5
 	white-space: nowrap
 	vertical-align: top
+	transition: background-color .2s ease
+
+	+min(1024)
+		transition: background-color .3s ease
+
 	&.transparent
 		background-color: inherit
 		color: #000
@@ -156,12 +179,15 @@ button
 			bottom: 10px
 	
 	&:focus, &:hover
-		text-decoration: none
-		color: #fff
+		+min(1024)
+			text-decoration: none
+			color: #fff
 	&:hover
-		background-color: lighten($accent, 5%)
+		+min(1024)
+			background-color: lighten($accent, 5%)
 		
 	&:active
+		color: #fff
 		background-color: darken($accent, 5%)
 		outline: none
 	

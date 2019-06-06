@@ -187,8 +187,11 @@ section, header
 						.fas
 							font-size: 1.117rem
 							line-height: 1.117rem
+
 						&:hover,  &:active
-							color: $accent
+							+min(1024)
+								color: #fff
+						
 					&.owl-prev
 						display: inline-block
 						left: 0
